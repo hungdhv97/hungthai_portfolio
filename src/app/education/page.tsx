@@ -51,7 +51,7 @@ const educationPage = () => {
                         delay={0.35}
                         className="flex w-1/4 items-center justify-evenly font-rubik text-lg max-sm:text-base"
                     >
-                        September 2015 - 2019
+                        Sep 2015 - 2019
                     </FramerWrapper>
                     <FramerWrapper
                         y={0}
