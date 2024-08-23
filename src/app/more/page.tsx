@@ -26,7 +26,7 @@ const morePage = () => {
         {
             title: "NightFury's Blog",
             description:
-                "Your blog focuses on sharing knowledge and experiences in programming and software development, particularly in articles related to technology and open-source solutions. " +
+                "My blog focuses on sharing knowledge and experiences in programming and software development, particularly in articles related to technology and open-source solutions. " +
                 "Additionally, the blog provides useful resources for beginners as well as experts in the field of information technology.",
             link: "https://nightfury47cntt.site123.me/",
         },
