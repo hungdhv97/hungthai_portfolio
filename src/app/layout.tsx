@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     keywords: [
         "patrick",
         "Patrick",
+        "patrick portfolio",
         "hung",
         "thai",
         "hung.thai",
@@ -53,7 +54,6 @@ export const metadata: Metadata = {
         },
     ],
     creator: "Patrick",
-
     openGraph: {
         type: "website",
         locale: "en_US",

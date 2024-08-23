@@ -17,8 +17,8 @@ const SkillsFooter: React.FC<MyComponentProps> = ({ items }) => {
                                     src={val?.img}
                                     alt={val?.alt}
                                     fill
-                                    objectFit="cover"
-                                    className="rounded-2xl"
+                                    sizes="33vw"
+                                    className="object-cover rounded-2xl"
                                 />
                             </div>
                         </div>

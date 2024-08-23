@@ -2,13 +2,10 @@ import Heading from "@/components/Heading";
 import SkillsFooter from "@/components/SkillsFooter";
 import { Badge } from "@/components/ui/badge";
 import { Lightbulb } from "lucide-react";
-import html from "../../../public/html.png";
-import css from "../../../public/css.png";
-import scss from "../../../public/scss.png";
 import js from "../../../public/js.png";
 import ts from "../../../public/ts.png";
 import react from "../../../public/react.png";
-import nextjs from "../../../public/nextjs.jpeg";
+import nextjs from "../../../public/nextjs.png";
 import cplusplus from "../../../public/cplusplus.png";
 import python from "../../../public/python.png";
 import java from "../../../public/java.png";
@@ -25,39 +22,71 @@ import datadog from "../../../public/datadog.png";
 import tailwind from "../../../public/tailwindcss.png";
 import github from "../../../public/github.png";
 import vscode from "../../../public/vscode.png";
+import kafka from "../../../public/kafka.png";
+import mysql from "../../../public/mysql.png";
 import FramerWrapper from "@/components/FramerWrapper";
 
 const skillPage = () => {
-    const programmingLanguages = [
-        { alt: "js", img: js },
-        { alt: "ts", img: ts },
-        { alt: "cplusplus", img: cplusplus },
-        { alt: "python", img: python },
-        { alt: "java", img: java },
-        { alt: "kotlin", img: kotlin },
-        { alt: "c#", img: csharp },
-    ];
-
-    const webTechnologies = [
-        { alt: "html", img: html },
-        { alt: "css", img: css },
-        { alt: "scss", img: scss },
-        { alt: "react", img: react },
-        { alt: "nextjs", img: nextjs },
-        { alt: "tailwind", img: tailwind },
-    ];
-
-    const toolsAndPlatforms = [
-        { alt: "github", img: github },
-        { alt: "vscode", img: vscode },
-        { alt: "postgresql", img: postgresql },
-        { alt: "redis", img: redis },
-        { alt: "mongodb", img: mongodb },
-        { alt: "spring-boot", img: springboot },
-        { alt: "fast-api", img: fastapi },
-        { alt: "django", img: django },
-        { alt: "datadog", img: datadog },
-        { alt: "github-actions", img: githubactions },
+    const skills = [
+        {
+            category: "Programming Languages",
+            items: [
+                { alt: "js", img: js },
+                { alt: "ts", img: ts },
+                { alt: "cplusplus", img: cplusplus },
+                { alt: "python", img: python },
+                { alt: "java", img: java },
+                { alt: "kotlin", img: kotlin },
+                { alt: "c#", img: csharp },
+            ],
+        },
+        {
+            category: "Frontend Frameworks",
+            items: [
+                { alt: "react", img: react },
+                { alt: "nextjs", img: nextjs },
+            ],
+        },
+        {
+            category: "CSS Frameworks",
+            items: [{ alt: "tailwind", img: tailwind }],
+        },
+        {
+            category: "Backend Frameworks",
+            items: [
+                { alt: "django", img: django },
+                { alt: "fast-api", img: fastapi },
+                { alt: "spring-boot", img: springboot },
+            ],
+        },
+        {
+            category: "Databases",
+            items: [
+                { alt: "postgresql", img: postgresql },
+                { alt: "redis", img: redis },
+                { alt: "mongodb", img: mongodb },
+                { alt: "mysql", img: mysql },
+            ],
+        },
+        {
+            category: "Tools and Platforms",
+            items: [
+                { alt: "github", img: github },
+                { alt: "vscode", img: vscode },
+            ],
+        },
+        {
+            category: "CI/CD",
+            items: [{ alt: "github-actions", img: githubactions }],
+        },
+        {
+            category: "Monitoring",
+            items: [{ alt: "datadog", img: datadog }],
+        },
+        {
+            category: "Message Brokers",
+            items: [{ alt: "kafka", img: kafka }],
+        },
     ];
 
     return (
@@ -84,24 +113,22 @@ const skillPage = () => {
                         demands of today&#x27;s dynamic digital landscape.
                     </p>
                 </FramerWrapper>
-                <FramerWrapper y={100} delay={0.3} className="block">
-                    <h1 className="text_underline relative flex gap-2 font-poppins text-2xl font-semibold text-primary max-sm:text-xl">
-                        Programming Languages
-                    </h1>
-                    <SkillsFooter items={programmingLanguages} />
-                </FramerWrapper>
-                <FramerWrapper className="block" y={100} delay={0.32}>
-                    <h1 className="text_underline relative flex gap-2 font-poppins text-2xl font-semibold text-primary max-sm:text-xl">
-                        Web Technologies and Frameworks
-                    </h1>
-                    <SkillsFooter items={webTechnologies} />
-                </FramerWrapper>
-                <FramerWrapper className="block" y={100} delay={0.34}>
-                    <h1 className="text_underline relative flex gap-2 font-poppins text-2xl font-semibold text-primary max-sm:text-xl">
-                        Tools and Platforms
-                    </h1>
-                    <SkillsFooter items={toolsAndPlatforms} />
-                </FramerWrapper>
+                {skills.map((skillCategory, index) => (
+                    <FramerWrapper
+                        key={skillCategory.category}
+                        className="block"
+                        y={100}
+                        delay={0.3 + index * 0.02}
+                    >
+                        <h1
+                            className="text_underline relative flex gap-2 font-poppins text-2xl font-semibold
+                                text-primary max-sm:text-xl"
+                        >
+                            {skillCategory.category}
+                        </h1>
+                        <SkillsFooter items={skillCategory.items} />
+                    </FramerWrapper>
+                ))}
             </div>
         </div>
     );
