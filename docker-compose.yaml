@@ -3,7 +3,7 @@ services:
     build:
       context: .
       args:
-        RESEND_API_KEY: "resend-api-key"
+        RESEND_API_KEY: "re_DJbRAiUp_5UrD96CMkuWhYqR26GMWGpSC"
     image: portfolio_frontend
     container_name: portfolio_frontend
     ports:
