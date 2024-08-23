@@ -1,6 +1,6 @@
 "use client";
-import TextRotator from "./TextRotator";
 import { useEffect, useState } from "react";
+import TextRotator from "./TextRotator";
 
 const HeroTexts = () => {
     const label = "Patrick";

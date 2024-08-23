@@ -1,7 +1,7 @@
 import FramerWrapper from "@/components/FramerWrapper";
-import { Badge } from "@/components/ui/badge";
 import Heading from "@/components/Heading";
 import ProjectCards from "@/components/ProjectsCard";
+import { Badge } from "@/components/ui/badge";
 import { Layers } from "lucide-react";
 
 const projectsPage = () => {

@@ -1,9 +1,9 @@
-import SocialLinks from "@/components/SocialLinks";
-import HeroTexts from "@/components/HeroTexts";
-import HeroImage from "@/components/HeroImage";
-import GithubBtn from "@/components/GithubBtn";
 import DownLoadResumeBtn from "@/components/DownLoadResumeBtn";
 import FramerWrapper from "@/components/FramerWrapper";
+import GithubBtn from "@/components/GithubBtn";
+import HeroImage from "@/components/HeroImage";
+import HeroTexts from "@/components/HeroTexts";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Home() {
     return (

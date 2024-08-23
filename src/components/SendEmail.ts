@@ -1,5 +1,5 @@
-import { Resend } from "resend";
 import { redirect } from "next/navigation";
+import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 export const SendEmail = async (formdata: FormData) => {

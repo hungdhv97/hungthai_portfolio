@@ -1,9 +1,15 @@
+import {
+    Card,
+    CardContent,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { Button, buttonVariants } from "./ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import FramerWrapper from "./FramerWrapper";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import FramerWrapper from "./FramerWrapper";
+import { Button, buttonVariants } from "./ui/button";
 
 interface projectcardprops {
     value: any;

@@ -1,30 +1,30 @@
+import FramerWrapper from "@/components/FramerWrapper";
 import Heading from "@/components/Heading";
 import SkillsFooter from "@/components/SkillsFooter";
 import { Badge } from "@/components/ui/badge";
 import { Lightbulb } from "lucide-react";
-import js from "../../../public/js.png";
-import ts from "../../../public/ts.png";
-import react from "../../../public/react.png";
-import nextjs from "../../../public/nextjs.png";
 import cplusplus from "../../../public/cplusplus.png";
-import python from "../../../public/python.png";
-import java from "../../../public/java.png";
-import kotlin from "../../../public/kotlin.png";
-import postgresql from "../../../public/postgresql.png";
-import redis from "../../../public/redis.png";
-import mongodb from "../../../public/mongodb.png";
-import githubactions from "../../../public/github-actions.png";
-import django from "../../../public/django.png";
-import fastapi from "../../../public/fast-api.png";
-import springboot from "../../../public/spring-boot.png";
 import csharp from "../../../public/csharp.png";
 import datadog from "../../../public/datadog.png";
-import tailwind from "../../../public/tailwindcss.png";
+import django from "../../../public/django.png";
+import fastapi from "../../../public/fast-api.png";
+import githubactions from "../../../public/github-actions.png";
 import github from "../../../public/github.png";
-import vscode from "../../../public/vscode.png";
+import java from "../../../public/java.png";
+import js from "../../../public/js.png";
 import kafka from "../../../public/kafka.png";
+import kotlin from "../../../public/kotlin.png";
+import mongodb from "../../../public/mongodb.png";
 import mysql from "../../../public/mysql.png";
-import FramerWrapper from "@/components/FramerWrapper";
+import nextjs from "../../../public/nextjs.png";
+import postgresql from "../../../public/postgresql.png";
+import python from "../../../public/python.png";
+import react from "../../../public/react.png";
+import redis from "../../../public/redis.png";
+import springboot from "../../../public/spring-boot.png";
+import tailwind from "../../../public/tailwindcss.png";
+import ts from "../../../public/ts.png";
+import vscode from "../../../public/vscode.png";
 
 const skillPage = () => {
     const skills = [

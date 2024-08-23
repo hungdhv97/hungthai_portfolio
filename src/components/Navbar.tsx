@@ -18,9 +18,9 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import FramerWrapper from "./FramerWrapper";
-import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const items = [

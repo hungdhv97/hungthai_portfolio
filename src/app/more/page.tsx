@@ -1,11 +1,17 @@
+import FramerWrapper from "@/components/FramerWrapper";
 import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, PackagePlus } from "lucide-react";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import FramerWrapper from "@/components/FramerWrapper";
+import {
+    Card,
+    CardContent,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import { ExternalLink, PackagePlus } from "lucide-react";
+import Link from "next/link";
 
 const morePage = () => {
     const morelink = [

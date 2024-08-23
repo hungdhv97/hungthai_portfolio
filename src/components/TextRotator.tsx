@@ -1,5 +1,3 @@
-import React from "react";
-
 function TextRotator() {
     return (
         <div className="flex flex-col items-center justify-center overflow-hidden rounded-md py-4">

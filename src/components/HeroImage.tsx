@@ -1,5 +1,5 @@
-import avatar from "../../public/avatar.png";
 import Image from "next/image";
+import avatar from "../../public/avatar.png";
 
 const HeroImage = () => {
     return (

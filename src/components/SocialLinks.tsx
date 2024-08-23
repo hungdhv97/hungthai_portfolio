@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
 import { Facebook, Linkedin } from "lucide-react";
-import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import FramerWrapper from "./FramerWrapper";
+import { buttonVariants } from "./ui/button";
 
 const SocialLinks = () => {
     const links = [

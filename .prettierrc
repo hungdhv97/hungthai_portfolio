@@ -15,8 +15,8 @@
     "trailingComma": "all",
     "useTabs": false,
     "plugins": [
-        "prettier-plugin-organize-imports",
         "prettier-plugin-tailwindcss",
-        "prettier-plugin-classnames"
+        "prettier-plugin-classnames",
+        "prettier-plugin-organize-imports"
     ]
 }
