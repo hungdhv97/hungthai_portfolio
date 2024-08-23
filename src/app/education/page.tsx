@@ -60,8 +60,8 @@ const educationPage = () => {
                         className="education_point relative w-3/4 gap-3 border-l-4 border-l-[#3c3c3c] p-4"
                     >
                         <div className="font-rubik text-2xl max-sm:text-xl">
-                            Bachelor of Information Technology, <br /> People
-                            Security Academy
+                            Bachelor of Information Technology, <br />{" "}
+                            People&#x27;s Security Academy
                         </div>
                         <p className="w-full font-poppins text-base text-primary max-sm:text-xs"></p>
                     </FramerWrapper>
