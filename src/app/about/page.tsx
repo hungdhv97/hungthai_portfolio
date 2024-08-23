@@ -21,24 +21,24 @@ const page = () => {
             </Badge>
             <div className="flex flex-col gap-3">
                 <Heading>
-                    Software Engineer And Web <br /> Developer, Based In Viet
-                    Nam.
+                    Software Engineer And Web Developer
+                    <br />
+                    Based In Viet Nam.
                 </Heading>
                 <FramerWrapper y={0} x={100}>
                     <p className="w-full font-poppins text-justify text-xl text-primary max-sm:text-lg">
-                        I am a Full Stack Web Developer from Nghe An, Viet Nam,
-                        with extensive experience in building robust backend
-                        systems for large-scale applications. While I have a
-                        passion for crafting innovative web projects and
-                        contributing to open-source communities, my expertise
-                        shines in my mastery of JavaScript, CSS, and server-side
-                        technologies. My biggest achievement is my ability to
-                        design and implement complex backend architectures that
-                        ensure scalability, security, and efficiency. With a
-                        keen eye for detail and a commitment to delivery speed,
-                        I excel at creating seamless and responsive interfaces
-                        that are supported by powerful and reliable backend
-                        systems, leaving a lasting impression on users.
+                        I am a Full Stack Web Developer from Vietnam, with
+                        extensive experience in designing and implementing
+                        robust backend architectures for large-scale
+                        applications. My expertise lies in creating complex
+                        systems that ensure scalability, security, and
+                        efficiency. In addition to backend development, I am
+                        passionate about frontend work and automation, crafting
+                        seamless, responsive interfaces that are supported by
+                        powerful and reliable backend systems. My ability to
+                        deliver innovative solutions quickly and effectively
+                        leaves a lasting impression on users and contributes to
+                        the success of the projects I work on.
                     </p>
                 </FramerWrapper>
             </div>
