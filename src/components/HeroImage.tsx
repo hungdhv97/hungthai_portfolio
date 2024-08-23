@@ -9,8 +9,8 @@ const HeroImage = () => {
                 alt="logo"
                 loading="eager"
                 priority
-                height={1000}
-                width={1000}
+                height={500}
+                width={500}
             />
         </>
     );
