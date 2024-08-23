@@ -23,6 +23,13 @@ const morePage = () => {
                 "Clear naming, modular design, and good documentation are key to successful projects.",
             link: "https://codelearn.io/sharing/post/1429199",
         },
+        {
+            title: "NightFury's Blog",
+            description:
+                "Your blog focuses on sharing knowledge and experiences in programming and software development, particularly in articles related to technology and open-source solutions. " +
+                "Additionally, the blog provides useful resources for beginners as well as experts in the field of information technology.",
+            link: "https://nightfury47cntt.site123.me/",
+        },
     ];
 
     return (
