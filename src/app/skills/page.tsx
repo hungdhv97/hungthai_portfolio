@@ -7,8 +7,8 @@ import cplusplus from "../../../public/cplusplus.png";
 import csharp from "../../../public/csharp.png";
 import datadog from "../../../public/datadog.png";
 import django from "../../../public/django.png";
-import fastapi from "../../../public/fast-api.png";
-import githubactions from "../../../public/github-actions.png";
+import fast_api from "../../../public/fast-api.png";
+import github_actions from "../../../public/github-actions.png";
 import github from "../../../public/github.png";
 import java from "../../../public/java.png";
 import js from "../../../public/js.png";
@@ -16,12 +16,13 @@ import kafka from "../../../public/kafka.png";
 import kotlin from "../../../public/kotlin.png";
 import mongodb from "../../../public/mongodb.png";
 import mysql from "../../../public/mysql.png";
-import nextjs from "../../../public/nextjs.png";
+import next_js from "../../../public/nextjs.png";
+import nginx from "../../../public/nginx.png";
 import postgresql from "../../../public/postgresql.png";
 import python from "../../../public/python.png";
 import react from "../../../public/react.png";
 import redis from "../../../public/redis.png";
-import springboot from "../../../public/spring-boot.png";
+import spring_boot from "../../../public/spring-boot.png";
 import tailwind from "../../../public/tailwindcss.png";
 import ts from "../../../public/ts.png";
 import vscode from "../../../public/vscode.png";
@@ -44,7 +45,7 @@ const skillPage = () => {
             category: "Frontend Frameworks",
             items: [
                 { alt: "react", img: react },
-                { alt: "nextjs", img: nextjs },
+                { alt: "next_js", img: next_js },
             ],
         },
         {
@@ -55,8 +56,8 @@ const skillPage = () => {
             category: "Backend Frameworks",
             items: [
                 { alt: "django", img: django },
-                { alt: "fast-api", img: fastapi },
-                { alt: "spring-boot", img: springboot },
+                { alt: "fast-api", img: fast_api },
+                { alt: "spring-boot", img: spring_boot },
             ],
         },
         {
@@ -77,7 +78,7 @@ const skillPage = () => {
         },
         {
             category: "CI/CD",
-            items: [{ alt: "github-actions", img: githubactions }],
+            items: [{ alt: "github-actions", img: github_actions }],
         },
         {
             category: "Monitoring",
@@ -86,6 +87,10 @@ const skillPage = () => {
         {
             category: "Message Brokers",
             items: [{ alt: "kafka", img: kafka }],
+        },
+        {
+            category: "Web Servers",
+            items: [{ alt: "nginx", img: nginx }],
         },
     ];
 
