@@ -4,8 +4,8 @@ services:
       context: .
       args:
         RESEND_API_KEY: "re_DJbRAiUp_5UrD96CMkuWhYqR26GMWGpSC"
-    image: portfolio_frontend
-    container_name: portfolio_frontend
+    image: hungthai_portfolio_frontend
+    container_name: hungthai_portfolio_frontend
     ports:
       - "4000:3000"
     networks:
