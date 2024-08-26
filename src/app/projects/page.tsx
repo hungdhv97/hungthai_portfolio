@@ -21,6 +21,7 @@ const projectsPage = () => {
                 "Postgresql",
                 "Mongodb",
                 "Redis",
+                "Nginx",
                 "Docker",
                 "Kafka",
                 "Kubernetes",
@@ -38,6 +39,7 @@ const projectsPage = () => {
             tags: [
                 "Django",
                 "Postgresql",
+                "Nginx",
                 "NextJS",
                 "Typescript",
                 "Tailwindcss",
