@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Layers } from "lucide-react";
 
 const projectsPage = () => {
-    const Projects = [
+    const projects = [
         {
             title: "Yogiyo - Backend service for a large-scale ecommerce shopping website",
             description:
@@ -179,7 +179,7 @@ const projectsPage = () => {
                 </FramerWrapper>
             </div>
             <div className="flex w-full flex-row flex-wrap gap-3 max-lg:flex-col text-justify">
-                {Projects.map((val, indx) => {
+                {projects.map((val, indx) => {
                     return <ProjectCards key={indx} value={val} num={indx} />;
                 })}
             </div>

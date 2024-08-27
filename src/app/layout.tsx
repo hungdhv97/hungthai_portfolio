@@ -16,7 +16,7 @@ const rubik = Rubik({
 });
 
 const siteConfig = {
-    name: "Patrick - hung.thai",
+    name: "Patrick - hung.thai - Portfolio",
     description: "I am a Full Stack Developer",
     ogImage: "https://portfolio.hungthai.site/og-image.png",
     url: "https://portfolio.hungthai.site",
@@ -43,9 +43,31 @@ export const metadata: Metadata = {
         "web",
         "web dev",
         "developer",
-        "PROGRAMMER ",
-        "programmer ",
-        "website",
+        "programmer",
+        "software engineer",
+        "frontend developer",
+        "backend developer",
+        "react",
+        "next.js",
+        "node.js",
+        "typescript",
+        "javascript",
+        "css",
+        "html",
+        "API",
+        "web design",
+        "responsive design",
+        "UI/UX",
+        "SEO",
+        "personal website",
+        "developer blog",
+        "project showcase",
+        "open source",
+        "Patrick Hung Thai",
+        "hung thai",
+        "hungthai",
+        "hung thai portfolio",
+        "hungthai portfolio",
     ],
     authors: [
         {
@@ -87,7 +109,6 @@ export default function RootLayout({
                     className={cn(
                         `screen relative flex min-h-screen items-center justify-between break-words
                          px-40 pb-4 pt-14 max-md:p-4 max-sm:pt-20`,
-                        { "bg-white": "#E6E7EB" },
                     )}
                 >
                     <Navbar />
