@@ -16,8 +16,8 @@ const rubik = Rubik({
 });
 
 const siteConfig = {
-    name: "Patrick - hung.thai - Portfolio",
-    description: "I am a Full Stack Developer",
+    name: "Patrick - Portfolio",
+    description: "I am a Software Engineer",
     ogImage: "https://portfolio.hungthai.site/og-image.png",
     url: "https://portfolio.hungthai.site",
 };

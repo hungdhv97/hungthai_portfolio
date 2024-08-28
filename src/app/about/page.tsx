@@ -21,7 +21,7 @@ const page = () => {
             </Badge>
             <div className="flex flex-col gap-3">
                 <Heading>
-                    Software Engineer And Web Developer
+                    Full Stack Developer
                     <br />
                     Based In Viet Nam.
                 </Heading>
