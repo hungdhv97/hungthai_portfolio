@@ -67,7 +67,7 @@ const projectsPage = () => {
                 "Developed using C# and Winform, the tool provides automated gameplay assistance, allowing users to improve their performance. " +
                 "The application is user-friendly, with an intuitive interface that makes it accessible even to those with limited technical experience.",
             tags: ["C#", "WinForm"],
-            link: "https://drive.google.com/file/d/1DFBvfAC6JlWiqAceBtNXCqGwFtt1vQTi/view?usp=drive_link",
+            link: "https://drive.google.com/file/d/1sz8gBoyDvGdA9-ITW8IpjNYEiHQHsKQb/view?usp=drive_link",
         },
         {
             title: "HH Story - Backend and admin panel for a story reading website",
