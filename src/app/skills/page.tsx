@@ -3,6 +3,7 @@ import Heading from "@/components/Heading";
 import SkillsFooter from "@/components/SkillsFooter";
 import { Badge } from "@/components/ui/badge";
 import { Lightbulb } from "lucide-react";
+import aws from "../../../public/aws.png";
 import cplusplus from "../../../public/cplusplus.png";
 import csharp from "../../../public/csharp.png";
 import datadog from "../../../public/datadog.png";
@@ -11,6 +12,7 @@ import fast_api from "../../../public/fast-api.png";
 import github_actions from "../../../public/github-actions.png";
 import github from "../../../public/github.png";
 import java from "../../../public/java.png";
+import jetbrains from "../../../public/jetbrains.png";
 import js from "../../../public/js.png";
 import kafka from "../../../public/kafka.png";
 import kotlin from "../../../public/kotlin.png";
@@ -32,13 +34,13 @@ const skillPage = () => {
         {
             category: "Programming Languages",
             items: [
-                { alt: "js", img: js },
-                { alt: "ts", img: ts },
-                { alt: "cplusplus", img: cplusplus },
                 { alt: "python", img: python },
                 { alt: "java", img: java },
                 { alt: "kotlin", img: kotlin },
+                { alt: "js", img: js },
+                { alt: "ts", img: ts },
                 { alt: "c#", img: csharp },
+                { alt: "cplusplus", img: cplusplus },
             ],
         },
         {
@@ -64,17 +66,14 @@ const skillPage = () => {
             category: "Databases",
             items: [
                 { alt: "postgresql", img: postgresql },
-                { alt: "redis", img: redis },
                 { alt: "mongodb", img: mongodb },
                 { alt: "mysql", img: mysql },
+                { alt: "redis", img: redis },
             ],
         },
         {
-            category: "Tools and Platforms",
-            items: [
-                { alt: "github", img: github },
-                { alt: "vscode", img: vscode },
-            ],
+            category: "Cloud",
+            items: [{ alt: "aws", img: aws }],
         },
         {
             category: "CI/CD",
@@ -91,6 +90,14 @@ const skillPage = () => {
         {
             category: "Web Servers",
             items: [{ alt: "nginx", img: nginx }],
+        },
+        {
+            category: "Tools and Platforms",
+            items: [
+                { alt: "github", img: github },
+                { alt: "visual studio", img: vscode },
+                { alt: "jetbrains", img: jetbrains },
+            ],
         },
     ];
 

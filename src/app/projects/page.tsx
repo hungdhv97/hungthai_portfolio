@@ -7,12 +7,13 @@ import { Layers } from "lucide-react";
 const projectsPage = () => {
     const projects = [
         {
-            title: "Yogiyo - Backend service for a large-scale ecommerce shopping website",
+            title: "Yogiyo - Backend service for a large-scale online food ordering website",
             description:
-                "As a Backend Developer for the Yogiyo project, Yogiyo backend service designed for a large ecommerce shopping website, supporting high traffic and complex operations. " +
-                "It leverages a microservices architecture, utilizing Django for Python2, FastAPI for Python3, and SpringBoot for Java and Kotlin. " +
-                "The system is built with robust technologies like Postgresql, MongoDB, and Redis for data management. " +
-                "It also integrates CI/CD pipelines using Docker, Kubernetes, and Github Actions to ensure smooth and continuous deployment processes.",
+                "As a Backend Developer for the Yogiyo project, I contributed to the backend services designed for a large online food ordering platform, handling high traffic and complex operations. " +
+                "The platform employs a microservices architecture using Django for Python2, FastAPI for Python3, and SpringBoot for Java and Kotlin. " +
+                "The system is supported by robust technologies like PostgreSQL, MongoDB, and Redis for data management, and Nginx for optimization. " +
+                "I also deployed batch jobs, developed consumer and producer applications, and integrated CI/CD pipelines using Docker, Kubernetes, and GitHub Actions, ensuring smooth and continuous deployment processes. " +
+                "Monitoring and system health were managed with Datadog, while cloud services were leveraged using AWS (S3, SQS, SNS, Lambda).",
             tags: [
                 "Django (Python2)",
                 "FastAPI (Python3)",
@@ -27,6 +28,7 @@ const projectsPage = () => {
                 "Kubernetes",
                 "CI/CD (Github Actions)",
                 "Datadog",
+                "AWS (S3, SQS, SNS, Lambda)",
             ],
             link: "https://www.yogiyo.co.kr/mobile/#/",
         },
@@ -65,7 +67,7 @@ const projectsPage = () => {
                 "Developed using C# and Winform, the tool provides automated gameplay assistance, allowing users to improve their performance. " +
                 "The application is user-friendly, with an intuitive interface that makes it accessible even to those with limited technical experience.",
             tags: ["C#", "WinForm"],
-            link: "https://github.com/hungdhv97/FNFNewBot",
+            link: "https://drive.google.com/file/d/1DFBvfAC6JlWiqAceBtNXCqGwFtt1vQTi/view?usp=drive_link",
         },
         {
             title: "HH Story - Backend and admin panel for a story reading website",
