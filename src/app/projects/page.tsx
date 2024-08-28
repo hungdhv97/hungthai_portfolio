@@ -109,9 +109,9 @@ const projectsPage = () => {
             title: "Virtual Voice Assistant - A Vietnamese voice assistant",
             description:
                 "The Virtual Voice Assistant is an AI-powered tool designed to assist Vietnamese speakers with various tasks. " +
-                "Developed in Python using Jupyter Notebook, the assistant leverages voice models and Shadcn UI to interact with users in a natural and intuitive manner. " +
+                "Developed in Python using Jupyter Notebook, the assistant leverages voice models to interact with users in a natural and intuitive manner. " +
                 "It supports a wide range of commands, helping users perform daily tasks efficiently.",
-            tags: ["Python", "JupiterNotebook", "AIModel", "Shadcn Ui"],
+            tags: ["Python", "JupiterNotebook", "AIModel"],
             link: "https://github.com/hungdhv97/Virtual-Assistant",
         },
         {
