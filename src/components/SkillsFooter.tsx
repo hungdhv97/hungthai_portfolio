@@ -12,7 +12,7 @@ const SkillsFooter: React.FC<MyComponentProps> = ({ items }) => {
                 items.map((val, indx) => {
                     return (
                         <div className="p-4" key={indx}>
-                            <div className="relative size-20 hover:scale-125 transition duration-200 ease-in-out">
+                            <div className="relative w-20 h-20 hover:scale-125 transition duration-200 ease-in-out">
                                 <Image
                                     src={val?.img}
                                     alt={val?.alt}
