@@ -25,7 +25,7 @@ const SocialLinks = () => {
                 return (
                     <FramerWrapper key={indx} delay={timing} y={50}>
                         <Link
-                            target="blank"
+                            target="_blank"
                             href={itm.link}
                             className={cn(
                                 buttonVariants({

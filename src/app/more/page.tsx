@@ -64,7 +64,7 @@ const morePage = () => {
                                 <CardFooter>
                                     <Link
                                         href={value.link}
-                                        target="blank"
+                                        target="_blank"
                                         className={cn(
                                             buttonVariants({
                                                 variant: "default",
