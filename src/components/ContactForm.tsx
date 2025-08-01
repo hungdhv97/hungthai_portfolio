@@ -26,7 +26,7 @@ const ContactForm = () => {
                         Send me a mail.
                     </CardTitle>
                     <CardDescription>
-                        Once form is submit you will be redirect to home page.
+                        Once the form is submitted, you will be redirected to the home page.
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
