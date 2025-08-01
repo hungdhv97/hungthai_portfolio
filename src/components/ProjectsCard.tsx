@@ -51,7 +51,7 @@ const ProjectCards: React.FC<projectcardprops> = ({ value, num }) => {
                 <CardFooter className="flex items-center justify-center">
                     <Link
                         href={value.link}
-                        target="blank"
+                        target="_blank"
                         className={cn(
                             buttonVariants({ variant: "default", size: "lg" }),
                             "flex",
