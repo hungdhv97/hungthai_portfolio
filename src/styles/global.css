@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0f172a;
+  --color-navy-light: #112240;
+  --color-navy-lighter: #1d2d50;
+  --color-slate: #8892b0;
+  --color-light-slate: #a8b2d1;
+  --color-lightest: #ccd6f6;
+  --color-teal: #64ffda;
+
+  --font-sans: "Inter", "SF Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-navy text-slate antialiased;
+}
+
+::selection {
+  @apply bg-teal text-navy;
+}
+
+/* Anchor offset for sticky header */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+/* Brittany-style link with underline on hover */
+.link {
+  @apply text-teal;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 0;
+  background: currentColor;
+  transition: width 0.2s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,32 @@
+---
+import { about, education, awards } from '../data/content';
+import SectionHeading from './SectionHeading.astro';
+---
+
+<section id="about" class="py-24">
+  <SectionHeading number="01" title="About" />
+  <div class="grid gap-10 lg:grid-cols-[1fr_280px]">
+    <div class="space-y-4">
+      {about.map((p) => (
+        <p class="text-base leading-relaxed text-slate">{p}</p>
+      ))}
+    </div>
+    <div class="space-y-6">
+      <div class="rounded border border-navy-lighter bg-navy-light/40 p-5">
+        <h3 class="font-mono text-xs uppercase tracking-wide text-teal">Education</h3>
+        <p class="mt-2 font-medium text-lightest">{education[0].school}</p>
+        <p class="text-sm text-slate">{education[0].degree}</p>
+        <p class="mt-1 font-mono text-xs text-slate">{education[0].period}</p>
+        <p class="mt-1 font-mono text-xs text-slate">{education[0].detail}</p>
+      </div>
+      <div class="rounded border border-navy-lighter bg-navy-light/40 p-5">
+        <h3 class="font-mono text-xs uppercase tracking-wide text-teal">Awards</h3>
+        <ul class="mt-2 space-y-2">
+          {awards.map((a) => (
+            <li class="text-sm leading-snug text-slate">{a}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

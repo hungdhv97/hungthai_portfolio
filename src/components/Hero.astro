@@ -1,0 +1,25 @@
+---
+import { site } from '../data/content';
+import SocialLinks from './SocialLinks.astro';
+---
+
+<section id="hero" class="flex min-h-[100svh] flex-col justify-center">
+  <p class="font-mono text-sm text-teal">Hi, my name is</p>
+  <h1 class="mt-4 font-sans text-4xl font-semibold leading-tight text-lightest sm:text-6xl lg:text-7xl">
+    {site.name}.
+  </h1>
+  <h2 class="mt-2 font-sans text-3xl font-semibold leading-tight text-slate sm:text-5xl lg:text-6xl">
+    I build things for the web.
+  </h2>
+  <p class="mt-6 max-w-xl text-base leading-relaxed text-slate sm:text-lg">
+    {site.tagline}
+  </p>
+  <div class="mt-8 md:hidden">
+    <SocialLinks />
+  </div>
+  <div class="mt-10">
+    <a href="#projects" class="inline-block border border-teal px-6 py-3 font-mono text-sm text-teal transition-all hover:bg-teal/10 hover:-translate-y-0.5">
+      View my projects
+    </a>
+  </div>
+</section>

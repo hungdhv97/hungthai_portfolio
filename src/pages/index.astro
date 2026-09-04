@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+import { nav, site } from '../data/content';
+---
+
+<BaseLayout>
+  <div class="relative">
+    <div
+      class="pointer-events-none fixed inset-0 z-0"
+      style="background: radial-gradient(600px circle at 0px 0px, rgba(29, 78, 216, 0.15), transparent 80%)"
+    ></div>
+
+    <Nav />
+
+    <!-- Mobile header -->
+    <header class="fixed top-0 z-40 flex w-full items-center justify-between px-6 py-4 backdrop-blur-sm md:hidden">
+      <a href="#" class="font-mono text-xl text-teal">&lt;HT/&gt;</a>
+      <button id="menuBtn" aria-label="Toggle menu" aria-expanded="false" class="text-lightest">
+        <svg id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+    </header>
+
+    <!-- Mobile menu overlay -->
+    <div id="mobileMenu" class="fixed inset-0 z-30 hidden bg-navy/95 backdrop-blur-sm md:hidden">
+      <nav aria-label="Mobile" class="flex h-full flex-col items-center justify-center gap-8">
+        {nav.map((item, i) => (
+          <a href={`#${item.id}`} class="font-mono text-lg text-lightest transition-colors hover:text-teal">
+            <span class="text-teal">{String(i + 1).padStart(2, '0')}.</span> {item.label}
+          </a>
+        ))}
+      </nav>
+    </div>
+
+    <main class="relative z-10 mx-auto max-w-5xl px-6 md:ml-[37.5%] md:max-w-[900px] md:px-8 lg:ml-[33.33%] lg:max-w-[1000px] lg:px-12">
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+    </main>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const icon = document.getElementById('menuIcon');
+
+    btn?.addEventListener('click', () => {
+      const open = menu?.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', String(open));
+      if (open) {
+        icon!.innerHTML = '<path d="M6 6l12 12M18 6L6 18" />';
+      } else {
+        icon!.innerHTML = '<path d="M3 6h18M3 12h18M3 18h18" />';
+      }
+    });
+
+    menu?.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        icon!.innerHTML = '<path d="M3 6h18M3 12h18M3 18h18" />';
+      });
+    });
+  </script>
+</BaseLayout>
