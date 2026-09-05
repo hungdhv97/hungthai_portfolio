@@ -20,7 +20,7 @@ export default function Spotlight() {
   return (
     <div
       ref={ref}
-      className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+      className="pointer-events-none fixed inset-0 z-30 transition duration-300"
       style={{ background: 'radial-gradient(600px at 50% 50%, rgba(29, 78, 216, 0.15), transparent 80%)' }}
     />
   );

@@ -30,12 +30,20 @@ export default function Contact() {
             <p className="mt-1 text-sm text-lightest">{skills.languages.join(', ')}</p>
           </div>
           <div>
+            <p className="font-mono text-xs text-slate">Frameworks</p>
+            <p className="mt-1 text-sm text-lightest">{skills.frameworks.join(', ')}</p>
+          </div>
+          <div>
             <p className="font-mono text-xs text-slate">Databases</p>
             <p className="mt-1 text-sm text-lightest">{skills.databases.join(', ')}</p>
           </div>
           <div>
-            <p className="font-mono text-xs text-slate">Other</p>
-            <p className="mt-1 text-sm text-lightest">{skills.other.join(', ')}</p>
+            <p className="font-mono text-xs text-slate">Cloud</p>
+            <p className="mt-1 text-sm text-lightest">{skills.cloud.join(', ')}</p>
+          </div>
+          <div>
+            <p className="font-mono text-xs text-slate">Tools</p>
+            <p className="mt-1 text-sm text-lightest">{skills.tools.join(', ')}</p>
           </div>
         </div>
       </div>

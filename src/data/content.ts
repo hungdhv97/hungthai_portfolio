@@ -56,26 +56,26 @@ export const experience = [
 export const projects = {
   featured: [
     {
-      title: 'e-network — Social Network',
+      title: 'Yogiyo — Large-Scale Food Ordering Service',
       description:
-        'Full-stack social network built on the MERN stack. Features include authentication, post creation/editing, notifications, follow/unfollow, comments, user search, and real-time chat with messaging, voice, and video calls.',
-      tech: ['MongoDB', 'ExpressJS', 'ReactJS', 'NodeJS'],
+        'Backend for a high-traffic food ordering platform serving 12M+ users and 2M+ daily active users. Handled peak traffic of 10,000 req/s by optimizing API performance and architecture, migrated from monolith to microservices, and reduced API response time by 35%.',
+      tech: ['Java', 'Kotlin', 'Python', 'Kafka', 'AWS'],
       github: 'https://github.com/hungdhv97',
       external: 'https://github.com/hungdhv97'
     },
     {
-      title: 'Graduation Thesis — GLOW Image Customization',
+      title: 'OwenFashion — E-Commerce Platform',
       description:
-        'Researched the application of the OpenAI GLOW network to customize object images to support investigation work. Applied a pre-trained GLOW model to Vietnamese portrait datasets and compared generated images with normal images.',
-      tech: ['Python', 'TensorFlow', 'OpenCV', 'NumPy', 'dlib'],
+        'Built a full e-commerce platform with a Django backend and Next.js frontend handling 50,000+ products. Optimized search and database performance to support 1,000 concurrent users and integrated Redis caching, improving system performance by 40%.',
+      tech: ['Django', 'Next.js', 'PostgreSQL', 'Redis', 'Docker'],
       github: 'https://github.com/hungdhv97',
       external: 'https://github.com/hungdhv97'
     },
     {
-      title: 'Vietnamese Virtual Assistant',
+      title: 'Waka — Story Reading Website',
       description:
-        'A voice assistant that listens, speaks, and executes Vietnamese commands — greetings, time, web/app launch, Google search, email, weather, music, wallpaper, news, and Q&A.',
-      tech: ['Python', 'Speech Recognition', 'Selenium'],
+        'Designed backend services with Django and web scraping with Scrapy, handling complex task queues with Celery. Built a responsive reading experience with Next.js and established CI/CD pipelines with GitHub Actions.',
+      tech: ['Django', 'Next.js', 'Scrapy', 'Celery', 'PostgreSQL'],
       github: 'https://github.com/hungdhv97',
       external: 'https://github.com/hungdhv97'
     }
@@ -84,28 +84,30 @@ export const projects = {
     {
       title: 'Friday Night Funkin Bot',
       description:
-        'Tool that reads mod songs (JSON) to automatically press keys with high accuracy. Initially Python (PyQT5, pyautogui), then rewritten in C++ to fix multi-threading timing issues.',
-      tech: ['Python', 'C++', 'PyQT5', 'pyautogui']
+        'High-accuracy game automation bot using multithreading in Python, C++, and C#. Migrated from Python to C++ for significant performance gains, reducing execution time by over 50% and miss rates to near 0%.',
+      tech: ['Python', 'C++', 'C#', 'Multithreading']
     },
     {
-      title: 'Twitter Automation Tool',
+      title: 'Graduation Thesis — GLOW Image Customization',
       description:
-        'Selenium-based tool that operates a list of accounts to perform actions like like, share, follow, comment, retweet, and quote tweet on given post links.',
-      tech: ['C#', 'Selenium']
+        'Applied the OpenAI GLOW network to customize object images to support investigation work, comparing generated images with normal images on Vietnamese portrait datasets.',
+      tech: ['Python', 'TensorFlow', 'OpenCV', 'NumPy']
     },
     {
-      title: 'Chrome Multi-Browser Simulator',
+      title: 'Vietnamese Virtual Assistant',
       description:
-        'Tool using mouse and keyboard hooks to simulate operations across multiple browsers, mirroring the first opened browser, similar to an Android multi-instance emulator.',
-      tech: ['C#', 'Mouse Hook', 'Keyboard Hook']
+        'A voice assistant that listens, speaks, and executes Vietnamese commands — greetings, time, web/app launch, Google search, email, weather, music, wallpaper, news, and Q&A.',
+      tech: ['Python', 'Speech Recognition', 'Selenium']
     }
   ]
 };
 
 export const skills = {
-  languages: ['Python', 'Java', 'C++', 'C#', 'JavaScript', 'HTML/CSS'],
-  databases: ['MySQL', 'MongoDB'],
-  other: ['Data Structures & Algorithms', 'OOP', 'Linux', 'Windows', 'REST APIs']
+  languages: ['Java', 'Kotlin', 'Python', 'TypeScript', 'C++', 'C#'],
+  frameworks: ['Spring Boot', 'Django', 'FastAPI'],
+  databases: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis'],
+  cloud: ['AWS (S3, SQS, SNS, Lambda)'],
+  tools: ['Kafka', 'Docker', 'Kubernetes', 'GitHub Actions', 'Datadog', 'Nginx']
 };
 
 export const education = [
