@@ -1,5 +1,4 @@
----
-import { site } from '../data/content';
+import { site } from '@/src/data/content';
 
 const socials = [
   {
@@ -13,24 +12,41 @@ const socials = [
     path: 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'
   }
 ];
----
 
-<ul class="flex items-center gap-4">
-  {socials.map((s) => (
-    <li>
-      <a href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.name} class="text-slate transition-colors hover:text-teal">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d={s.path} />
-        </svg>
-      </a>
-    </li>
-  ))}
-  <li>
-    <a href={`mailto:${site.email}`} aria-label="Email" class="text-slate transition-colors hover:text-teal">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-        <rect x="2" y="4" width="20" height="16" rx="2" />
-        <path d="m2 6 10 7L22 6" />
-      </svg>
-    </a>
-  </li>
-</ul>
+export default function SocialLinks() {
+  return (
+    <>
+      {socials.map((s) => (
+        <li key={s.name} className="mr-5 shrink-0 text-xs">
+          <a
+            className="block text-slate transition-colors hover:text-teal"
+            href={s.href}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label={`${s.name} (opens in a new tab)`}
+            title={s.name}
+          >
+            <span className="sr-only">{s.name}</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d={s.path} />
+            </svg>
+          </a>
+        </li>
+      ))}
+      <li className="mr-5 shrink-0 text-xs">
+        <a
+          className="block text-slate transition-colors hover:text-teal"
+          href={`mailto:${site.email}`}
+          aria-label="Email"
+          title="Email"
+        >
+          <span className="sr-only">Email</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m2 6 10 7L22 6" />
+          </svg>
+        </a>
+      </li>
+    </>
+  );
+}

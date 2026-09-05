@@ -21,8 +21,20 @@ export const about = [
 
 export const nav = [
   { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' }
+];
+
+export const experience = [
+  {
+    role: 'Bachelor of Science in Information Technology',
+    company: 'People\'s Security Academy',
+    period: 'Sep 2015 — Sep 2019',
+    description:
+      'Developed a strong foundation in data structures, algorithms, and object-oriented programming. Completed a graduation thesis applying the OpenAI GLOW network to customize object images to support investigation work.',
+    tech: ['Python', 'TensorFlow', 'C++', 'Java']
+  }
 ];
 
 export const projects = {
