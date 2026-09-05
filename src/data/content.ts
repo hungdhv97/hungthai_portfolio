@@ -1,11 +1,11 @@
-// Content for hungthai.id.vn — Thai Doan Hung
+// Content for hungthai.id.vn — Hung Thai
 
 export const site = {
-  name: 'Thai Doan Hung',
+  name: 'Hung Thai',
   role: 'Software Engineer',
-  tagline: 'I build reliable backend systems, web applications, and automation tools.',
+  tagline: 'I build scalable, high-availability distributed systems for e-commerce and lending/banking.',
   description:
-    'Software engineer focused on building dependable backend services and web applications, and automation tools.',
+    'Software engineer with 6+ years of experience building scalable, high-availability distributed systems across e-commerce and lending/banking.',
   location: 'Hanoi, Vietnam',
   email: 'hungdhv97@gmail.com',
   github: 'https://github.com/hungdhv97',
@@ -14,9 +14,9 @@ export const site = {
 };
 
 export const about = [
-  'Hi there! I\'m Hung, a software engineer who enjoys building things — from backend services and web applications to automation tools. My work spans Python, Java, C++, C#, and JavaScript.',
-  'I\'ve built a full-stack social network (MERN), researched deep-learning image customization with the OpenAI GLOW model, and developed a range of automation tools — from a Vietnamese voice assistant to game and browser automation utilities.',
-  'I studied Information Technology at the People\'s Security Academy, where I developed a strong foundation in data structures, algorithms, and object-oriented programming. Outside of code, I enjoy problem solving and building things that make life a little easier.'
+  'Software engineer with 6+ years of experience building scalable, high-availability distributed systems — across both e-commerce and lending/banking. I\'ve shipped products at consumer scale and engineered the complex, compliance-driven systems behind enterprise loan lifecycles.',
+  'In e-commerce, I built and scaled backend services that handled high traffic and high transaction volumes, optimizing performance and reliability under real-world load. In lending/banking, I design and own the authorization and workflow layers — fine-grained RBAC, multi-level approval chains, and business rule engines that map precisely to regulatory and operational constraints.',
+  'I take ownership of system design, collaborate across teams to align technical decisions with business logic, and mentor engineers to raise the quality bar. In fast, agile environments, I deliver multiple features per release cycle without sacrificing quality or compliance.'
 ];
 
 export const nav = [
@@ -27,6 +27,22 @@ export const nav = [
 ];
 
 export const experience = [
+  {
+    role: 'Software Engineer',
+    company: 'Aurionpro Integro Lending',
+    period: 'Oct 2024 — Present',
+    description:
+      'Design and own the authorization and workflow layers of enterprise lending systems — fine-grained RBAC, multi-level approval chains, and business rule engines aligned with regulatory and operational constraints.',
+    tech: ['Java', 'Spring Boot', 'Distributed Systems', 'RBAC']
+  },
+  {
+    role: 'Software Engineer',
+    company: 'SOTATEK., JSC',
+    period: 'Mar 2020 — Oct 2024',
+    description:
+      'Built and scaled backend services for e-commerce that handled high traffic and high transaction volumes, optimizing performance and reliability under real-world load.',
+    tech: ['Java', 'Spring Boot', 'MySQL', 'Distributed Systems']
+  },
   {
     role: 'Bachelor of Science in Information Technology',
     company: 'People\'s Security Academy',
