@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hung Thai — Senior Backend Engineer CV</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 12mm 14mm;
+      }
+      :root {
+        --ink: #14161a;
+        --muted: #565c66;
+        --accent: #0f4c81;
+        --line: #d9dde3;
+        --soft: #eef1f5;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        background: #ffffff;
+        color: #22262b;
+        font-family: Helvetica, Arial, "Segoe UI", Roboto, sans-serif;
+        font-size: 10.8px;
+        line-height: 1.42;
+      }
+      .page {
+        color: #22262b;
+      }
+      /* Căn giữa để xem trên browser — KHÔNG áp dụng khi in/xuất PDF */
+      @media screen {
+        body {
+          background: #e9ebee;
+        }
+        .page {
+          width: 210mm;
+          min-height: 297mm;
+          margin: 16px auto;
+          padding: 12mm 14mm;
+          background: #fff;
+          box-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+        }
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      /* Header */
+      .head {
+        border-bottom: 2.5px solid var(--ink);
+        padding-bottom: 6px;
+        margin-bottom: 9px;
+      }
+      h1 {
+        font-size: 23px;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .head .role-line {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: 0.5px;
+        margin-top: 3px;
+      }
+      .head .contact {
+        font-size: 10px;
+        color: var(--muted);
+        margin-top: 5px;
+      }
+      .head .contact a {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .head .contact .sep {
+        color: #aab0b8;
+        margin: 0 6px;
+      }
+      /* Sections */
+      .section {
+        margin-bottom: 8px;
+      }
+      .sec-title {
+        font-size: 10.5px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--ink);
+        border-bottom: 1.5px solid var(--line);
+        padding-bottom: 3px;
+        margin-bottom: 5px;
+      }
+      .summary p {
+        text-align: justify;
+      }
+      .summary p + p {
+        margin-top: 3px;
+      }
+      /* Core competencies grouped list */
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 3px;
+        column-gap: 24px;
+      }
+      .skills .item {
+        flex: 1 1 46%;
+        min-width: 250px;
+        text-align: justify;
+      }
+      .skills .label {
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .skills .label:after {
+        content: ": ";
+      }
+      /* Entries */
+      .entry {
+        margin-bottom: 7px;
+        page-break-inside: avoid;
+      }
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+      .entry .headrow {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+      }
+      .entry .role {
+        font-weight: 700;
+        font-size: 11.5px;
+        color: var(--ink);
+      }
+      .entry .date {
+        font-size: 9.8px;
+        color: var(--muted);
+        white-space: nowrap;
+        font-weight: 700;
+      }
+      .entry .org {
+        margin-top: 1px;
+      }
+      .entry .org .name {
+        font-weight: 600;
+        color: #333a43;
+      }
+      .entry .org .loc {
+        color: var(--muted);
+      }
+      ul.bullets {
+        margin: 3px 0 0 15px;
+      }
+      ul.bullets li {
+        margin-bottom: 2px;
+        text-align: justify;
+      }
+      ul.bullets li::marker {
+        color: var(--accent);
+      }
+      .techline {
+        margin-top: 3px;
+        font-size: 9.3px;
+        color: #4a4f56;
+      }
+      .techline b {
+        color: #333;
+      }
+      .desc {
+        text-align: justify;
+      }
+      .two-col {
+        display: flex;
+        gap: 24px;
+      }
+      .two-col .col {
+        flex: 1;
+      }
+      .award {
+        margin-bottom: 2px;
+      }
+      .sub {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="head">
+        <h1>Hung Thai</h1>
+        <div class="role-line">
+          Senior Backend Engineer — Distributed Systems · Lending / Banking ·
+          Java &amp; Cloud
+        </div>
+        <div class="contact">
+          <div class="c-line">
+            +84 948 961 619<span class="sep">|</span
+            ><span style="white-space: nowrap">Ha Noi, Viet&nbsp;Nam</span
+            ><span class="sep">|</span>hungdhv97@gmail.com
+          </div>
+          <div class="c-line">
+            <a href="https://www.linkedin.com/in/hungdhv97"
+              >https://www.linkedin.com/in/hungdhv97</a
+            ><span class="sep">|</span
+            ><a href="https://www.github.com/hungdhv97"
+              >https://www.github.com/hungdhv97</a
+            ><span class="sep">|</span
+            ><a href="https://www.hungthai.id.vn/"
+              >https://www.hungthai.id.vn/</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!-- ===== PROFILE ===== -->
+      <section class="section summary">
+        <div class="sec-title">Profile</div>
+        <p>
+          Senior Backend Engineer with <strong>6+ years</strong> designing,
+          building, and operating
+          <strong>scalable, high-availability distributed systems</strong> in
+          lending/banking and high-traffic e-commerce. Currently owning the
+          <strong>authorization &amp; workflow architecture</strong> —
+          fine-grained RBAC, multi-level approval chains, and business-rule
+          engines — for an enterprise lending platform serving
+          <strong>Philippine National Bank</strong>.
+        </p>
+        <p>
+          Combines deep
+          <strong
+            >Java / Spring / Kafka / cloud-native (AWS, Kubernetes)</strong
+          >
+          engineering with a track record at consumer scale (12M+ users, 10k
+          req/s peak) and a proven ability to
+          <strong>lead and mentor small teams</strong> through fast,
+          compliance-driven release cycles.
+        </p>
+      </section>
+
+      <!-- ===== CORE COMPETENCIES ===== -->
+      <section class="section">
+        <div class="sec-title">Technical Skills</div>
+        <div class="skills">
+          <div class="item">
+            <span class="label">Languages</span>Java, Kotlin, Python,
+            TypeScript, C++, C#
+          </div>
+          <div class="item">
+            <span class="label">Frameworks</span>Spring Boot, Java EE /
+            MicroProfile (Helidon), Django, FastAPI
+          </div>
+          <div class="item">
+            <span class="label">Databases</span>PostgreSQL, MongoDB, MySQL,
+            Redis, Oracle
+          </div>
+          <div class="item">
+            <span class="label">Cloud &amp; DevOps</span>AWS, Docker,
+            Kubernetes, GitHub Actions, Nginx
+          </div>
+          <div class="item">
+            <span class="label">Messaging &amp; Event-Driven</span>Kafka, JMS /
+            MQ, event-driven pipelines
+          </div>
+          <div class="item">
+            <span class="label">Architecture &amp; Design</span>Microservices,
+            Distributed Systems, REST API design, Performance Tuning
+          </div>
+          <div class="item">
+            <span class="label">Domain</span>Banking · Lending · Food Delivery ·
+            E-commerce · Digital Media
+          </div>
+          <div class="item">
+            <span class="label">Observability</span>Datadog, CI/CD, monitoring
+            &amp; alerting
+          </div>
+          <div class="item">
+            <span class="label">Testing</span>JUnit, PyTest, unit / integration
+            pipelines
+          </div>
+          <div class="item">
+            <span class="label">Leadership</span>Technical Leadership,
+            Mentoring, Agile / Scrum
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== EXPERIENCE ===== -->
+      <section class="section">
+        <div class="sec-title">Professional Experience</div>
+
+        <div class="entry">
+          <div class="headrow">
+            <span class="role">Senior Software Engineer</span
+            ><span class="date">Oct 2024 — Present</span>
+          </div>
+          <div class="org">
+            <span class="name">Aurionpro Integro Lending</span>
+            <span class="loc">· Ha Noi, Viet Nam</span>
+          </div>
+          <ul class="bullets">
+            <li>
+              <strong
+                >Architect &amp; own the authorization / workflow
+                platform</strong
+              >
+              across three systems — SMLC (origination), SMLP (customer portal),
+              CLIMS (servicing) — designed as fine-grained RBAC (FAP/DAP),
+              multi-level approval chains, and business-rule engines mapped to
+              regulatory constraints.
+            </li>
+            <li>
+              <strong>Define system &amp; API boundaries</strong> between the
+              Integro monolith and Helidon microservices (Order of Events,
+              collateral, valuation, pricing) so the systems integrate as one
+              product.
+            </li>
+            <li>
+              <strong>Lead platform modernization</strong> — decomposing
+              monolithic loan-lifecycle modules into services and improving
+              deployability without compromising compliance or business logic.
+            </li>
+            <li>
+              <strong>Raise quality &amp; performance</strong> — optimize
+              critical paths and batch jobs, cut N+1 queries, harden transaction
+              boundaries, and add focused JUnit/EasyMock coverage.
+            </li>
+            <li>
+              <strong
+                >Set engineering standards &amp; mentor a team of 5
+                engineers</strong
+              >
+              — conventions, code review, and delivery practices that ship
+              multiple features per release cycle with quality and compliance
+              intact.
+            </li>
+          </ul>
+          <div class="techline">
+            <b>Tech:</b> Java 8/11 · Spring &amp; Java EE · Hibernate ORM ·
+            Oracle 19c/PostgreSQL · Helidon MicroProfile · Kafka · JMS/MQ
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="headrow">
+            <span class="role">Backend / Software Engineer</span
+            ><span class="date">Mar 2020 — Oct 2024</span>
+          </div>
+          <div class="org">
+            <span class="name"
+              >SOTATEK., JSC — Global IT Solutions &amp; Software
+              Development</span
+            >
+            <span class="loc">· Ha Noi, Viet Nam</span>
+          </div>
+          <ul class="bullets">
+            <li>
+              <strong>Led a backend team of 5 engineers</strong> building
+              high-availability microservices (Django / FastAPI on Python,
+              Spring Boot on Java/Kotlin) for high-traffic e-commerce.
+            </li>
+            <li>
+              Designed and optimized REST APIs, cutting latency by
+              <strong>~40%</strong>; optimized PostgreSQL / MongoDB / Redis data
+              access, improving throughput by <strong>~30%</strong>.
+            </li>
+            <li>
+              Built large-scale
+              <strong>event-driven pipelines on Kafka</strong>; migrated
+              infrastructure to <strong>AWS</strong> (S3, SQS, SNS, Lambda),
+              reducing costs by <strong>~25%</strong> and improving fault
+              tolerance.
+            </li>
+            <li>
+              Automated deployment with
+              <strong>Docker, Kubernetes, and GitHub Actions</strong>,
+              minimizing downtime and enabling seamless CI/CD; monitoring &amp;
+              alerting with <strong>Datadog</strong> sustaining
+              <strong>99.9% uptime</strong>.
+            </li>
+            <li>
+              <strong>Mentored junior developers</strong>, improving team
+              productivity and knowledge sharing.
+            </li>
+          </ul>
+          <div class="techline">
+            <b>Tech:</b> Java · Kotlin · Python · Spring Boot · Django · FastAPI
+            · Kafka · Docker · Kubernetes · AWS · Datadog
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SELECTED PROJECTS ===== -->
+      <section class="section">
+        <div class="sec-title">Selected Projects</div>
+
+        <div class="entry">
+          <div class="headrow">
+            <span class="role"
+              >PNB SmartLender — Enterprise Lending Platform</span
+            ><span class="date">Aurionpro · 2024—now</span>
+          </div>
+          <div class="desc">
+            Lending platform for
+            <strong>Philippine National Bank</strong> unifying SMLC (origination
+            / LOS — 130+ business modules, 10k+ Java files), SMLP (customer
+            portal), and CLIMS (servicing) into one end-to-end loan value chain
+            on a shared Integro platform (Java EE monolith + Helidon
+            microservices). Owned the authorization &amp; workflow architecture
+            (RBAC FAP/DAP, approval chains, business-rule engines) and defined
+            service/API boundaries (Order of Events, collateral, valuation,
+            pricing).
+          </div>
+          <div class="techline">
+            Java 8/11 · Spring &amp; Java EE · Hibernate · Oracle 19c/PostgreSQL
+            · Helidon MicroProfile · Kafka · JMS/MQ
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="headrow">
+            <span class="role">Yogiyo — Large-Scale Food Ordering Service</span
+            ><span class="date">SotaTek · 2020—2024</span>
+          </div>
+          <div class="desc">
+            Backend for a high-traffic platform serving
+            <strong>12M+ users, 2M+ DAU</strong>, handling
+            <strong>10,000 req/s peak</strong>. Migrated a Django monolith to
+            microservices; cut API latency by <strong>35%</strong>; built Kafka
+            event-driven systems; used AWS (S3/SQS/SNS/Lambda); sustained
+            <strong>&gt;80% test coverage</strong>; monitored production with
+            Datadog.
+          </div>
+          <div class="techline">
+            Java · Kotlin · Python · Kafka · AWS · Datadog
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="headrow">
+            <span class="role">OwenFashion — E-Commerce Platform</span
+            ><span class="date">SotaTek · 2020—2024</span>
+          </div>
+          <div class="desc">
+            Full e-commerce platform (Django backend, Next.js frontend) handling
+            <strong>50,000+ products</strong>. Optimized search &amp; database
+            for <strong>1,000 concurrent users</strong>; Redis caching improved
+            performance by <strong>40%</strong>; CI/CD with GitHub Actions cut
+            deployment time by <strong>30%</strong>.
+          </div>
+          <div class="techline">
+            Django · Next.js · PostgreSQL · Redis · Docker · GitHub Actions
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="headrow">
+            <span class="role">Waka — Book Reading Website</span
+            ><span class="date">SotaTek · 2020—2024</span>
+          </div>
+          <div class="desc">
+            Backend services with Django and web scraping with Scrapy, handling
+            complex task queues with Celery; responsive reading experience with
+            Next.js; CI/CD with GitHub Actions.
+          </div>
+          <div class="techline">
+            Django · Next.js · Scrapy · Celery · PostgreSQL
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="headrow">
+            <span class="role"
+              >Friday Night Funkin Bot (FNFBot) — Game Automation Tool</span
+            ><span class="date">Personal</span>
+          </div>
+          <div class="desc">
+            High-accuracy automation bot using multithreading in Python, C++,
+            and C#. Migrated Python → C++ for major performance gains, cutting
+            execution time by over <strong>50%</strong> and pushing miss rates
+            to near 0% on high difficulty levels.
+          </div>
+          <div class="techline">Python · C++ · C# · Multithreading</div>
+        </div>
+
+        <div class="entry">
+          <div class="headrow">
+            <span class="role"
+              >Vietnamese Virtual Assistant &amp; Graduation Thesis (GLOW)</span
+            ><span class="date">Academic</span>
+          </div>
+          <div class="desc">
+            Vietnamese voice assistant (speech recognition, search, email,
+            weather, Q&amp;A). Graduation thesis applied the OpenAI GLOW network
+            to customize object images on Vietnamese portrait datasets.
+          </div>
+          <div class="techline">
+            Python · TensorFlow · OpenCV · Speech Recognition · Selenium
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== EDUCATION / LANG / AWARDS ===== -->
+      <div class="two-col">
+        <div class="col">
+          <section class="section">
+            <div class="sec-title">Education</div>
+            <div class="entry">
+              <div class="headrow">
+                <span class="role">B.Sc. Information Technology</span
+                ><span class="date">Sep 2015 — Sep 2019</span>
+              </div>
+              <div class="desc">
+                People's Security Academy, Ha Noi, Viet Nam
+              </div>
+              <div class="sub">
+                Thesis: OpenAI GLOW applied to image customization
+                (Python/TensorFlow).
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="sec-title">Languages</div>
+            <div class="entry">
+              <strong>English</strong> — Fluent
+              <span style="color: #aab0b8">|</span>
+              <strong>Vietnamese</strong> — Native
+            </div>
+          </section>
+        </div>
+        <div class="col">
+          <section class="section">
+            <div class="sec-title">Awards</div>
+            <div class="award">
+              2019 — Second Prize, Student Scientific Research Competition
+            </div>
+            <div class="award">
+              2017 &amp; 2018 — First Prize, National Mathematics Olympiad
+            </div>
+            <div class="award">
+              2015 — 2017 — Multiple prizes, National Math &amp; Computer
+              Science Olympiads
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

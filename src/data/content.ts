@@ -90,7 +90,7 @@ export const projects = {
       external: "https://github.com/hungdhv97",
     },
     {
-      title: "Waka — Story Reading Website",
+      title: "Waka — Book Reading Website",
       description:
         "Designed backend services with Django and web scraping with Scrapy, handling complex task queues with Celery. Built a responsive reading experience with Next.js and established CI/CD pipelines with GitHub Actions.",
       tech: ["Django", "Next.js", "Scrapy", "Celery", "PostgreSQL"],

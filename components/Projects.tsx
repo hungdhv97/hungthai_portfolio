@@ -1,5 +1,5 @@
-import { projects } from '@/src/data/content';
-import SectionHeading from './SectionHeading';
+import { projects } from "@/src/data/content";
+import SectionHeading from "./SectionHeading";
 
 export default function Projects() {
   return (
@@ -21,7 +21,10 @@ export default function Projects() {
                   <span>{p.title}</span>
                 </h3>
                 <p className="mt-2 text-sm leading-normal">{p.description}</p>
-                <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+                <ul
+                  className="mt-2 flex flex-wrap"
+                  aria-label="Technologies used"
+                >
                   {p.tech.map((t) => (
                     <li key={t} className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal/10 px-3 py-1 text-xs font-medium leading-5 text-teal">
@@ -45,7 +48,9 @@ export default function Projects() {
             key={p.title}
             className="group relative rounded border border-navy-light bg-navy-light/40 p-6 transition-transform hover:-translate-y-1"
           >
-            <h4 className="font-sans text-base font-medium text-lightest">{p.title}</h4>
+            <h4 className="font-sans text-base font-medium text-lightest">
+              {p.title}
+            </h4>
             <p className="mt-2 text-sm leading-relaxed">{p.description}</p>
             <ul className="mt-4 flex flex-wrap gap-3 font-mono text-xs text-teal">
               {p.tech.map((t) => (

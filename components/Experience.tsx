@@ -1,5 +1,5 @@
-import { experience } from '@/src/data/content';
-import SectionHeading from './SectionHeading';
+import { experience } from "@/src/data/content";
+import SectionHeading from "./SectionHeading";
 
 export default function Experience() {
   return (
@@ -30,14 +30,19 @@ export default function Experience() {
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                       <span>
-                        {job.role} ·{' '}
-                        <span className="inline-block text-teal">{job.company}</span>
+                        {job.role} ·{" "}
+                        <span className="inline-block text-teal">
+                          {job.company}
+                        </span>
                       </span>
                     </a>
                   </div>
                 </h3>
                 <p className="mt-2 text-sm leading-normal">{job.description}</p>
-                <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+                <ul
+                  className="mt-2 flex flex-wrap"
+                  aria-label="Technologies used"
+                >
                   {job.tech.map((t) => (
                     <li key={t} className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal/10 px-3 py-1 text-xs font-medium leading-5 text-teal">
@@ -51,6 +56,29 @@ export default function Experience() {
           </li>
         ))}
       </ol>
+      <div className="mt-4">
+        <a
+          href="/cv.html"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="View Full Résumé (opens in a new tab)"
+          className="group/link inline-flex items-baseline gap-2 font-medium leading-tight text-lightest transition-colors hover:text-teal"
+        >
+          <span>View Full Résumé</span>
+          <span className="inline-block transition-transform motion-reduce:transform-none group-hover/link:translate-x-1">
+            <svg
+              className="h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.75"
+              aria-hidden="true"
+            >
+              <path d="M7 17 17 7M7 7h10v10" />
+            </svg>
+          </span>
+        </a>
+      </div>
     </section>
   );
 }
