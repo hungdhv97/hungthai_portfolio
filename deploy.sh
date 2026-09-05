@@ -12,10 +12,10 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 # ---------- Config (đổi nếu cần) ----------
-VMID="104"                      # container ID
-NODE_IP="10.23.1.50"            # Proxmox host (node pve)
-CT_SRV="/var/www/hungthai"      # thư mục nginx phục vụ trong container
-CT_IP="10.23.1.104"             # IP của container (để xác minh HTTP)
+VMID="104"                 # container ID
+NODE_IP="10.23.1.50"       # Proxmox host (node pve)
+CT_SRV="/var/www/hungthai" # thư mục nginx phục vụ trong container
+CT_IP="10.23.1.104"        # IP của container (để xác minh HTTP)
 SSH_KEY="$HOME/.ssh/id_ed25519"
 TAR="/tmp/site.tar.gz"
 SSH_OPTS="-o StrictHostKeyChecking=no -o PasswordAuthentication=no -i $SSH_KEY"
@@ -41,7 +41,7 @@ ssh $SSH_OPTS "root@$NODE_IP" "echo '$B64' | base64 -d | pct exec $VMID -- bash 
 
 echo "==> B5: Xác minh HTTP (qua nginx container) ..."
 ssh $SSH_OPTS "root@$NODE_IP" \
-  "curl -s -o /dev/null -w 'index    -> HTTP=%{http_code}\n' http://$CT_IP/ ; \
+ "curl -s -o /dev/null -w 'index    -> HTTP=%{http_code}\n' http://$CT_IP/ ; \
    curl -s -o /dev/null -w 'cv.html  -> HTTP=%{http_code}\n' http://$CT_IP/cv.html"
 
 rm -f "$TAR"
