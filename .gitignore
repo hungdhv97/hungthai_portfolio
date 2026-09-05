@@ -33,3 +33,6 @@ proxmox-jobs*.sqlite3*
 
 # docs
 /docs
+
+# local pi harness config
+/.pi/

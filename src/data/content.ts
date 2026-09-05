@@ -56,6 +56,14 @@ export const experience = [
 export const projects = {
   featured: [
     {
+      title: 'PNB SmartLender — Enterprise Lending Platform',
+      description:
+        'An enterprise lending platform for Philippine National Bank that unifies SmartLender Commercial (SMLC), SmartLender Portal (SMLP), and CLIMS into one end-to-end loan value chain — from origination through servicing to collateral and credit management. I own the authorization and workflow architecture: fine-grained RBAC (FAP/DAP), multi-level approval chains, and business rule engines mapped precisely to regulatory constraints across all three systems.',
+      tech: ['Java', 'Spring', 'Java EE', 'Helidon', 'Hibernate', 'Oracle', 'Activiti/Camunda', 'Kafka'],
+      github: 'https://github.com/hungdhv97',
+      external: 'https://github.com/hungdhv97'
+    },
+    {
       title: 'Yogiyo — Large-Scale Food Ordering Service',
       description:
         'Backend for a high-traffic food ordering platform serving 12M+ users and 2M+ daily active users. Handled peak traffic of 10,000 req/s by optimizing API performance and architecture, migrated from monolith to microservices, and reduced API response time by 35%.',
