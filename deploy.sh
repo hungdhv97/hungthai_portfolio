@@ -41,7 +41,7 @@ ssh $SSH_OPTS "root@$NODE_IP" "echo '$B64' | base64 -d | pct exec $VMID -- bash 
 
 echo "==> B5: Xác minh HTTP (qua nginx container) ..."
 ssh $SSH_OPTS "root@$NODE_IP" \
-  "curl -s -o /dev/null -w 'index    -> HTTP=%{http_code}\n' http://$CT_IP/ ; \
+ "curl -s -o /dev/null -w 'index    -> HTTP=%{http_code}\n' http://$CT_IP/ ; \
    curl -s -o /dev/null -w 'cv.html  -> HTTP=%{http_code}\n' http://$CT_IP/cv.html"
 
 rm -f "$TAR"
