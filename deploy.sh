@@ -35,7 +35,7 @@ echo "==> B3: pct push vào container $VMID ..."
 ssh $SSH_OPTS "root@$NODE_IP" "pct push $VMID /tmp/site.tar.gz /var/tmp/site.tar.gz"
 
 echo "==> B4: Giải nén + chown trong container ..."
-INNER="cd $CT_SRV && find . -mindepth 1 -maxdepth 1 -exec rm -rf {} + && tar -xzf /var/tmp/site.tar.gz && chown -R www-data:www-data $CT_SRV && rm -f /var/tmp/site.tar.gz"
+INNER="cd $CT_SRV && find . -mindepth 1 -maxdepth 1 -exec rm -rf {} + && tar -xzf /var/tmp/site.tar.gz --no-same-owner && chown -R www-data:www-data $CT_SRV && rm -f /var/tmp/site.tar.gz"
 B64="$(printf '%s' "$INNER" | base64 -w0)"
 ssh $SSH_OPTS "root@$NODE_IP" "echo '$B64' | base64 -d | pct exec $VMID -- bash -s"
 
