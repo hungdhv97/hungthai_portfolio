@@ -1,5 +1,5 @@
-import { about } from '@/src/data/content';
-import SectionHeading from './SectionHeading';
+import { about } from "@/src/data/content";
+import SectionHeading from "./SectionHeading";
 
 export default function About() {
   return (

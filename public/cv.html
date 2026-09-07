@@ -34,16 +34,61 @@
       }
       /* Căn giữa để xem trên browser — KHÔNG áp dụng khi in/xuất PDF */
       @media screen {
+        html {
+          -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+        }
         body {
           background: #e9ebee;
         }
         .page {
-          width: 210mm;
-          min-height: 297mm;
+          width: 100%;
+          max-width: 210mm;
+          min-height: 0;
           margin: 16px auto;
           padding: 12mm 14mm;
           background: #fff;
           box-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+        }
+      }
+      /* Small screens / phones: page flows full-width, no A4 gaps */
+      @media screen and (max-width: 560px) {
+        body {
+          background: #f4f5f7;
+        }
+        .page {
+          max-width: none;
+          margin: 0;
+          padding: 10px;
+          box-shadow: none;
+        }
+        h1 {
+          font-size: 19px;
+        }
+        .head .role-line {
+          font-size: 11px;
+        }
+        .head .contact {
+          font-size: 9px;
+        }
+        .sec-title {
+          font-size: 9.6px;
+        }
+        .entry .role {
+          font-size: 11px;
+        }
+        .techline {
+          font-size: 8.8px;
+        }
+        ul.bullets {
+          margin-left: 12px;
+        }
+        .skills .item {
+          flex: 1 1 100%;
+          min-width: 0;
+        }
+        .two-col {
+          flex-direction: column;
         }
       }
       a {
@@ -77,6 +122,8 @@
       .head .contact a {
         color: var(--ink);
         font-weight: 600;
+        overflow-wrap: anywhere;
+        word-break: break-all;
       }
       .head .contact .sep {
         color: #aab0b8;
@@ -254,8 +301,8 @@
             TypeScript, C++, C#
           </div>
           <div class="item">
-            <span class="label">Frameworks</span>Spring Boot, Java EE /
-            MicroProfile (Helidon), Django, FastAPI
+            <span class="label">Frameworks</span>Spring Boot, Java EE,
+            Django, FastAPI
           </div>
           <div class="item">
             <span class="label">Databases</span>PostgreSQL, MongoDB, MySQL,
@@ -318,7 +365,7 @@
             </li>
             <li>
               <strong>Define system &amp; API boundaries</strong> between the
-              Integro monolith and Helidon microservices (Order of Events,
+              Integro monolith and its microservices (Order of Events,
               collateral, valuation, pricing) so the systems integrate as one
               product.
             </li>
@@ -330,7 +377,7 @@
             <li>
               <strong>Raise quality &amp; performance</strong> — optimize
               critical paths and batch jobs, cut N+1 queries, harden transaction
-              boundaries, and add focused JUnit/EasyMock coverage.
+              boundaries, and add focused JUnit coverage.
             </li>
             <li>
               <strong
@@ -344,7 +391,7 @@
           </ul>
           <div class="techline">
             <b>Tech:</b> Java 8/11 · Spring &amp; Java EE · Hibernate ORM ·
-            Oracle 19c/PostgreSQL · Helidon MicroProfile · Kafka · JMS/MQ
+            Oracle 19c/PostgreSQL · Kafka · JMS/MQ
           </div>
         </div>
 
@@ -412,7 +459,7 @@
             <strong>Philippine National Bank</strong> unifying SMLC (origination
             / LOS — 130+ business modules, 10k+ Java files), SMLP (customer
             portal), and CLIMS (servicing) into one end-to-end loan value chain
-            on a shared Integro platform (Java EE monolith + Helidon
+            on a shared Integro platform (Java EE monolith +
             microservices). Owned the authorization &amp; workflow architecture
             (RBAC FAP/DAP, approval chains, business-rule engines) and defined
             service/API boundaries (Order of Events, collateral, valuation,
@@ -420,7 +467,7 @@
           </div>
           <div class="techline">
             Java 8/11 · Spring &amp; Java EE · Hibernate · Oracle 19c/PostgreSQL
-            · Helidon MicroProfile · Kafka · JMS/MQ
+            · Kafka · JMS/MQ
           </div>
         </div>
 

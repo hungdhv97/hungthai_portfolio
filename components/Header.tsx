@@ -1,16 +1,18 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { site, nav } from '@/src/data/content';
-import SocialLinks from './SocialLinks';
+import { useEffect, useState } from "react";
+import { site, nav } from "@/src/data/content";
+import SocialLinks from "./SocialLinks";
 
 export default function Header() {
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState("");
 
   useEffect(() => {
-    const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('header nav a'));
+    const links = Array.from(
+      document.querySelectorAll<HTMLAnchorElement>("header nav a"),
+    );
     const sections = links
-      .map((a) => document.querySelector(a.getAttribute('href') ?? ''))
+      .map((a) => document.querySelector(a.getAttribute("href") ?? ""))
       .filter(Boolean) as HTMLElement[];
 
     const observer = new IntersectionObserver(
@@ -19,7 +21,7 @@ export default function Header() {
           if (e.isIntersecting) setActive(e.target.id);
         });
       },
-      { rootMargin: '-45% 0px -50% 0px' }
+      { rootMargin: "-45% 0px -50% 0px" },
     );
 
     sections.forEach((s) => observer.observe(s));
@@ -41,15 +43,18 @@ export default function Header() {
           <ul className="mt-16 w-max">
             {nav.map((item) => (
               <li key={item.id}>
-                <a className="group flex items-center py-3" href={`#${item.id}`}>
+                <a
+                  className="group flex items-center py-3"
+                  href={`#${item.id}`}
+                >
                   <span
                     className={`nav-indicator mr-4 h-px w-8 bg-slate transition-all group-hover:w-16 group-hover:bg-lightest group-focus-visible:w-16 group-focus-visible:bg-lightest motion-reduce:transition-none ${
-                      active === item.id ? 'w-16 bg-lightest' : ''
+                      active === item.id ? "w-16 bg-lightest" : ""
                     }`}
                   />
                   <span
                     className={`nav-text text-xs font-bold uppercase tracking-widest text-slate group-hover:text-lightest group-focus-visible:text-lightest ${
-                      active === item.id ? 'text-lightest' : ''
+                      active === item.id ? "text-lightest" : ""
                     }`}
                   >
                     {item.label}

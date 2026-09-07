@@ -1,10 +1,10 @@
-import Spotlight from '@/components/Spotlight';
-import Header from '@/components/Header';
-import About from '@/components/About';
-import Experience from '@/components/Experience';
-import Projects from '@/components/Projects';
-import Awards from '@/components/Awards';
-import Footer from '@/components/Footer';
+import Spotlight from "@/components/Spotlight";
+import Header from "@/components/Header";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import Awards from "@/components/Awards";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

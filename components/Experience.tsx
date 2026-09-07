@@ -39,18 +39,6 @@ export default function Experience() {
                   </div>
                 </h3>
                 <p className="mt-2 text-sm leading-normal">{job.description}</p>
-                <ul
-                  className="mt-2 flex flex-wrap"
-                  aria-label="Technologies used"
-                >
-                  {job.tech.map((t) => (
-                    <li key={t} className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-teal/10 px-3 py-1 text-xs font-medium leading-5 text-teal">
-                        {t}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </li>

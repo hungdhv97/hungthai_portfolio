@@ -34,7 +34,6 @@ export const experience = [
     period: "Oct 2024 — Present",
     description:
       "Design and own the authorization and workflow layers of enterprise lending systems — fine-grained RBAC, multi-level approval chains, and business rule engines aligned with regulatory and operational constraints.",
-    tech: ["Java", "Spring Boot", "Distributed Systems", "RBAC"],
   },
   {
     role: "Software Engineer",
@@ -42,7 +41,6 @@ export const experience = [
     period: "Mar 2020 — Oct 2024",
     description:
       "Built and scaled backend services for e-commerce that handled high traffic and high transaction volumes, optimizing performance and reliability under real-world load.",
-    tech: ["Java", "Spring Boot", "MySQL", "Distributed Systems"],
   },
   {
     role: "Bachelor of Science in Information Technology",
@@ -50,7 +48,6 @@ export const experience = [
     period: "Sep 2015 — Sep 2019",
     description:
       "Developed a strong foundation in data structures, algorithms, and object-oriented programming. Completed a graduation thesis applying the OpenAI GLOW network to customize object images to support investigation work.",
-    tech: ["Python", "TensorFlow", "C++", "Java"],
   },
 ];
 
@@ -64,7 +61,6 @@ export const projects = {
         "Java",
         "Spring",
         "Java EE",
-        "Helidon",
         "Hibernate",
         "Oracle",
         "Activiti/Camunda",

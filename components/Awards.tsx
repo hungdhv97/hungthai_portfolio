@@ -1,5 +1,5 @@
-import { awards } from '@/src/data/content';
-import SectionHeading from './SectionHeading';
+import { awards } from "@/src/data/content";
+import SectionHeading from "./SectionHeading";
 
 export default function Awards() {
   return (
