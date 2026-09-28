@@ -10,9 +10,17 @@ export default function Footer() {
         </h3>
         <div className="mt-3 space-y-3">
           <div>
-            <p className="font-mono text-xs text-slate">Languages</p>
+            <p className="font-mono text-xs text-slate">Languages (Production)</p>
             <p className="mt-1 text-sm text-lightest">
               {skills.languages.join(", ")}
+            </p>
+          </div>
+          <div>
+            <p className="font-mono text-xs text-slate">
+              Familiar / Personal Projects
+            </p>
+            <p className="mt-1 text-sm text-lightest">
+              {skills.familiar.join(", ")}
             </p>
           </div>
           <div>

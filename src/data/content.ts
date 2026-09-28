@@ -33,14 +33,14 @@ export const experience = [
     company: "Aurionpro Integro Lending",
     period: "Oct 2024 — Present",
     description:
-      "Design and own the authorization and workflow layers of enterprise lending systems — fine-grained RBAC, multi-level approval chains, and business rule engines aligned with regulatory and operational constraints.",
+      "Lead and mentor a team of 5 engineers across SMLC, SMLP, and CLIMS. Own technical direction for authorization and workflow layers, drive Agile delivery with code review and CI/CD standards, and partner with product and compliance to ship multiple features per release cycle.",
   },
   {
     role: "Software Engineer",
     company: "SOTATEK., JSC",
     period: "Mar 2020 — Oct 2024",
     description:
-      "Built and scaled backend services for e-commerce that handled high traffic and high transaction volumes, optimizing performance and reliability under real-world load.",
+      "Led a backend team of 5 engineers across Python (Django/FastAPI) and Java/Kotlin (Spring Boot) microservices. Owned Agile delivery, standardized CI/CD with Docker, Kubernetes, and GitHub Actions, and established Datadog monitoring to sustain high availability.",
   },
   {
     role: "Bachelor of Science in Information Technology",
@@ -56,7 +56,7 @@ export const projects = {
     {
       title: "PNB SmartLender — Enterprise Lending Platform",
       description:
-        "An enterprise lending platform for Philippine National Bank that unifies SmartLender Commercial (SMLC), SmartLender Portal (SMLP), and CLIMS into one end-to-end loan value chain — from origination through servicing to collateral and credit management. I own the authorization and workflow architecture: fine-grained RBAC (FAP/DAP), multi-level approval chains, and business rule engines mapped precisely to regulatory constraints across all three systems.",
+        "Technical challenge: unify the end-to-end loan value chain for Philippine National Bank (SMLC, SMLP, CLIMS) under strict regulatory constraints. Solution: architected fine-grained RBAC (FAP/DAP), multi-level approval chains, and business-rule engines; defined service/API boundaries and hardened Oracle/Hibernate data access. Impact: compliant rollout across three systems with predictable multi-feature releases.",
       tech: [
         "Java",
         "Spring",
@@ -72,7 +72,7 @@ export const projects = {
     {
       title: "Yogiyo — Large-Scale Food Ordering Service",
       description:
-        "Backend for a high-traffic food ordering platform serving 12M+ users and 2M+ daily active users. Handled peak traffic of 10,000 req/s by optimizing API performance and architecture, migrated from monolith to microservices, and reduced API response time by 35%.",
+        "Technical challenge: 12M+ users, 2M+ DAU, ~10,000 req/s peak on a Django monolith bottleneck. Solution: led migration to microservices with event-driven Kafka architecture for core flows plus AWS serverless (SQS, SNS, Lambda). Impact: ~35% lower API latency, ~25% lower cost, ~99.9% uptime with Datadog and 80%+ coverage.",
       tech: ["Java", "Kotlin", "Python", "Kafka", "AWS"],
       github: "https://github.com/hungdhv97",
       external: "https://github.com/hungdhv97",
@@ -80,7 +80,7 @@ export const projects = {
     {
       title: "OwenFashion — E-Commerce Platform",
       description:
-        "Built a full e-commerce platform with a Django backend and Next.js frontend handling 50,000+ products. Optimized search and database performance to support 1,000 concurrent users and integrated Redis caching, improving system performance by 40%.",
+        "Technical challenge: 50,000+ products and ~1,000 concurrent users with slow search and long deploy cycles. Solution: reworked search and PostgreSQL access, added Redis caching, containerized with Docker and built GitHub Actions CI/CD. Impact: ~40% performance improvement and ~30% faster deployments.",
       tech: ["Django", "Next.js", "PostgreSQL", "Redis", "Docker"],
       github: "https://github.com/hungdhv97",
       external: "https://github.com/hungdhv97",
@@ -88,7 +88,7 @@ export const projects = {
     {
       title: "Waka — Book Reading Website",
       description:
-        "Designed backend services with Django and web scraping with Scrapy, handling complex task queues with Celery. Built a responsive reading experience with Next.js and established CI/CD pipelines with GitHub Actions.",
+        "Technical challenge: large-scale content ingestion and responsive reading under heavy crawling and background-job load. Solution: built Django backend with Scrapy and Celery queues on PostgreSQL, responsive Next.js frontend, and GitHub Actions CI/CD. Impact: stabilized high-volume ingestion and automated releases for faster iteration.",
       tech: ["Django", "Next.js", "Scrapy", "Celery", "PostgreSQL"],
       github: "https://github.com/hungdhv97",
       external: "https://github.com/hungdhv97",
@@ -117,9 +117,10 @@ export const projects = {
 };
 
 export const skills = {
-  languages: ["Java", "Kotlin", "Python", "TypeScript", "C++", "C#"],
-  frameworks: ["Spring Boot", "Django", "FastAPI"],
-  databases: ["PostgreSQL", "MongoDB", "MySQL", "Redis"],
+  languages: ["Java", "Python", "Kotlin"],
+  familiar: ["TypeScript", "C++", "C#"],
+  frameworks: ["Spring Boot", "Java EE", "Django", "FastAPI"],
+  databases: ["PostgreSQL", "MongoDB", "Redis", "Oracle"],
   cloud: ["AWS (S3, SQS, SNS, Lambda)"],
   tools: [
     "Kafka",
