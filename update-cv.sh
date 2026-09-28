@@ -2,7 +2,7 @@
 # ============================================================
 #  UPDATE CV — 1 lệnh duy nhất
 #  Nguồn duy nhất: public/cv.html
-#   1) Xuất PDF    -> docs/Hung_Thai_Backend_Developer.pdf
+#   1) Xuất PDF    -> docs/Hung_Thai_Senior_Software_Engineer.pdf
 #   2) Build site  -> cập nhật out/cv.html (sẵn sàng deploy)
 #  Cách dùng:  ./update-cv.sh
 # ============================================================
@@ -10,7 +10,7 @@ set -e
 cd "$(dirname "$0")"
 
 SRC="public/cv.html"
-PDF="docs/Hung_Thai_Backend_Developer.pdf"
+PDF="docs/Hung_Thai_Senior_Software_Engineer.pdf"
 
 if [ ! -f "$SRC" ]; then
   echo "❌ Không tìm thấy $SRC" >&2

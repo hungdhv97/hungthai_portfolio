@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hung Thai — Senior Backend Engineer CV</title>
+    <title>Hung Thai — Senior Software Engineer CV</title>
     <style>
       @page {
         size: A4;
@@ -122,8 +122,24 @@
       .head .contact a {
         color: var(--ink);
         font-weight: 600;
+        text-decoration: none;
         overflow-wrap: anywhere;
         word-break: break-all;
+      }
+      @media screen {
+        .head .contact a {
+          color: var(--accent);
+        }
+        .head .contact a:hover {
+          text-decoration: underline;
+        }
+      }
+      @media print {
+        /* Giữ link clickable trong PDF của Chrome, hiển thị gọn như text */
+        .head .contact a {
+          color: var(--ink);
+          text-decoration: none;
+        }
       }
       .head .contact .sep {
         color: #aab0b8;
@@ -195,6 +211,7 @@
       }
       .entry .org {
         margin-top: 1px;
+        margin-bottom: 2px;
       }
       .entry .org .name {
         font-weight: 600;
@@ -217,9 +234,12 @@
         margin-top: 3px;
         font-size: 9.3px;
         color: #4a4f56;
+        background: var(--soft);
+        border-left: 2.5px solid var(--accent);
+        padding: 3px 6px;
       }
       .techline b {
-        color: #333;
+        color: var(--ink);
       }
       .desc {
         text-align: justify;
@@ -244,25 +264,24 @@
       <header class="head">
         <h1>Hung Thai</h1>
         <div class="role-line">
-          Senior Software Engineer | Distributed Systems | Scalable
-          &amp; Cloud-Native Architecture
+          Senior Software Engineer<br />Backend &amp; Distributed Systems
         </div>
         <div class="contact">
           <div class="c-line">
-            +84 948 961 619<span class="sep">|</span
+            <a href="tel:+84948961619">+84 948 961 619</a
+            ><span class="sep">|</span
             ><span style="white-space: nowrap">Ha Noi, Viet&nbsp;Nam</span
-            ><span class="sep">|</span>hungdhv97@gmail.com
+            ><span class="sep">|</span
+            ><a href="mailto:hungdhv97@gmail.com">hungdhv97@gmail.com</a>
           </div>
           <div class="c-line">
             <a href="https://www.linkedin.com/in/hungdhv97"
-              >https://www.linkedin.com/in/hungdhv97</a
+              >linkedin.com/in/hungdhv97</a
             ><span class="sep">|</span
             ><a href="https://www.github.com/hungdhv97"
-              >https://www.github.com/hungdhv97</a
+              >github.com/hungdhv97</a
             ><span class="sep">|</span
-            ><a href="https://www.hungthai.id.vn/"
-              >https://www.hungthai.id.vn/</a
-            >
+            ><a href="https://www.hungthai.id.vn/">hungthai.id.vn</a>
           </div>
         </div>
       </header>
@@ -270,26 +289,22 @@
       <!-- ===== PROFILE ===== -->
       <section class="section summary">
         <div class="sec-title">Profile</div>
-        <p>
-          Senior Backend Engineer with <strong>6+ years</strong> designing,
-          building, and operating
-          <strong>scalable, high-availability distributed systems</strong> in
-          lending/banking and high-traffic e-commerce. Currently owning the
-          <strong>authorization &amp; workflow architecture</strong> —
-          fine-grained RBAC, multi-level approval chains, and business-rule
-          engines — for an enterprise lending platform serving
-          <strong>Philippine National Bank</strong>.
-        </p>
-        <p>
-          Combines deep
-          <strong
-            >Java / Spring / Kafka / cloud-native (AWS, Kubernetes)</strong
-          >
-          engineering with a track record at consumer scale (12M+ users, 10k
-          req/s peak) and a proven ability to
-          <strong>lead and mentor small teams</strong> through fast,
-          compliance-driven release cycles.
-        </p>
+        <ul class="bullets">
+          <li>
+            Senior Software Engineer with <strong>6+ years</strong> building
+            <strong>Distributed Systems</strong> for lending/banking and
+            high-traffic e-commerce.
+          </li>
+          <li>
+            Deep in <strong>Java / Spring / Kafka</strong>; strong in
+            <strong>Microservices, Domain-Driven Design</strong>, REST API
+            design and performance tuning.
+          </li>
+          <li>
+            Proven in <strong>Team Leadership</strong>: leading &amp; mentoring
+            a team of 5 through fast, compliance-driven release cycles.
+          </li>
+        </ul>
       </section>
 
       <!-- ===== CORE COMPETENCIES ===== -->
@@ -297,32 +312,30 @@
         <div class="sec-title">Technical Skills</div>
         <div class="skills">
           <div class="item">
-            <span class="label">Languages</span>Java, Kotlin, Python,
-            TypeScript, C++, C#
+            <span class="label">Languages</span
+            ><strong>Java, Python</strong> (Strong) · Kotlin,
+            TypeScript, C++, C# (Familiar)
           </div>
           <div class="item">
             <span class="label">Frameworks</span>Spring Boot, Java EE,
             Django, FastAPI
           </div>
           <div class="item">
-            <span class="label">Databases</span>PostgreSQL, MongoDB, MySQL,
-            Redis, Oracle
-          </div>
-          <div class="item">
             <span class="label">Cloud &amp; DevOps</span>AWS, Docker,
             Kubernetes, GitHub Actions, Nginx
           </div>
           <div class="item">
-            <span class="label">Messaging &amp; Event-Driven</span>Kafka, JMS /
-            MQ, event-driven pipelines
+            <span class="label">Messaging &amp; Event-Driven</span>Kafka,
+            event-driven pipelines
+          </div>
+          <div class="item">
+            <span class="label">Databases</span>PostgreSQL, MongoDB, MySQL,
+            Redis, Oracle
           </div>
           <div class="item">
             <span class="label">Architecture &amp; Design</span>Microservices,
-            Distributed Systems, REST API design, Performance Tuning
-          </div>
-          <div class="item">
-            <span class="label">Domain</span>Banking · Lending · Food Delivery ·
-            E-commerce · Digital Media
+            Distributed Systems, Domain-Driven Design, REST API design,
+            Performance Tuning
           </div>
           <div class="item">
             <span class="label">Observability</span>Datadog, CI/CD, monitoring
@@ -335,6 +348,10 @@
           <div class="item">
             <span class="label">Leadership</span>Technical Leadership,
             Mentoring, Agile / Scrum
+          </div>
+          <div class="item">
+            <span class="label">Domain</span>Banking · Food Delivery ·
+            E-commerce · Digital Media
           </div>
         </div>
       </section>
@@ -364,12 +381,6 @@
               regulatory constraints.
             </li>
             <li>
-              <strong>Define system &amp; API boundaries</strong> between the
-              Integro monolith and its microservices (Order of Events,
-              collateral, valuation, pricing) so the systems integrate as one
-              product.
-            </li>
-            <li>
               <strong>Lead platform modernization</strong> — decomposing
               monolithic loan-lifecycle modules into services and improving
               deployability without compromising compliance or business logic.
@@ -392,8 +403,8 @@
             </li>
           </ul>
           <div class="techline">
-            <b>Tech:</b> Java 8/11 · Spring &amp; Java EE · Hibernate ORM ·
-            Oracle 19c/PostgreSQL · Kafka · JMS/MQ
+            <b>Tech stack:</b> Java 8/11 · Spring &amp; Java EE · Hibernate ORM
+            · Oracle 19c/PostgreSQL
           </div>
         </div>
 
@@ -440,8 +451,8 @@
             </li>
           </ul>
           <div class="techline">
-            <b>Tech:</b> Java · Kotlin · Python · Spring Boot · Django · FastAPI
-            · Kafka · Docker · Kubernetes · AWS · Datadog
+            <b>Tech stack:</b> Java · Kotlin · Python · Spring Boot · Django ·
+            FastAPI · Kafka · Docker · Kubernetes · AWS · Datadog
           </div>
         </div>
       </section>
@@ -456,20 +467,21 @@
               >PNB SmartLender — Enterprise Lending Platform</span
             ><span class="date">Aurionpro · 2024—now</span>
           </div>
-          <div class="desc">
-            Lending platform for
-            <strong>Philippine National Bank</strong> unifying SMLC (origination
-            / LOS — 130+ business modules, 10k+ Java files), SMLP (customer
-            portal), and CLIMS (servicing) into one end-to-end loan value chain
-            on a shared Integro platform (Java EE monolith +
-            microservices). Owned the authorization &amp; workflow architecture
-            (RBAC FAP/DAP, approval chains, business-rule engines) and defined
-            service/API boundaries (Order of Events, collateral, valuation,
-            pricing).
-          </div>
+          <ul class="bullets">
+            <li>
+              <strong>Problem / Scale:</strong> end-to-end loan value chain for
+              <strong>Philippine National Bank</strong> — SMLC, SMLP portal,
+              CLIMS servicing on shared Integro platform.
+            </li>
+            <li>
+              <strong>Contribution &amp; Impact:</strong> Architected RBAC
+              FAP/DAP, approval chains &amp; rule engines; defined service/API
+              boundaries (Order of Events, collateral, valuation, pricing).
+            </li>
+          </ul>
           <div class="techline">
-            Java 8/11 · Spring &amp; Java EE · Hibernate · Oracle 19c/PostgreSQL
-            · Kafka · JMS/MQ
+            <b>Tech stack:</b> Java 8/11 · Spring &amp; Java EE · Hibernate ·
+            Oracle 19c/PostgreSQL
           </div>
         </div>
 
@@ -478,17 +490,21 @@
             <span class="role">Yogiyo — Large-Scale Food Ordering Service</span
             ><span class="date">SotaTek · 2020—2024</span>
           </div>
-          <div class="desc">
-            Backend for a high-traffic platform serving
-            <strong>12M+ users, 2M+ DAU</strong>, handling
-            <strong>10,000 req/s peak</strong>. Migrated a Django monolith to
-            microservices; cut API latency by <strong>35%</strong>; built Kafka
-            event-driven systems; used AWS (S3/SQS/SNS/Lambda); sustained
-            <strong>&gt;80% test coverage</strong>; monitored production with
-            Datadog.
-          </div>
+          <ul class="bullets">
+            <li>
+              <strong>Problem / Scale:</strong>
+              <strong>12M+ users, 2M+ DAU, 10,000 req/s peak</strong>;
+              Django monolith bottleneck at scale.
+            </li>
+            <li>
+              <strong>Contribution &amp; Impact:</strong> Engineered migration
+              to microservices; cut API latency <strong>35%</strong>; built
+              Kafka event-driven pipelines on AWS; sustained
+              <strong>&gt;80% coverage</strong> &amp; 99.9% uptime with Datadog.
+            </li>
+          </ul>
           <div class="techline">
-            Java · Kotlin · Python · Kafka · AWS · Datadog
+            <b>Tech stack:</b> Java · Kotlin · Python · Kafka · AWS · Datadog
           </div>
         </div>
 
@@ -497,109 +513,81 @@
             <span class="role">OwenFashion — E-Commerce Platform</span
             ><span class="date">SotaTek · 2020—2024</span>
           </div>
-          <div class="desc">
-            Full e-commerce platform (Django backend, Next.js frontend) handling
-            <strong>50,000+ products</strong>. Optimized search &amp; database
-            for <strong>1,000 concurrent users</strong>; Redis caching improved
-            performance by <strong>40%</strong>; CI/CD with GitHub Actions cut
-            deployment time by <strong>30%</strong>.
-          </div>
+          <ul class="bullets">
+            <li>
+              <strong>Problem / Scale:</strong>
+              <strong>50,000+ products, 1,000 concurrent users</strong>; slow
+              search &amp; long deploy cycles.
+            </li>
+            <li>
+              <strong>Contribution &amp; Impact:</strong> Optimized search/DB +
+              Redis caching (<strong>+40% performance</strong>); CI/CD with
+              GitHub Actions cut deploy time <strong>30%</strong>.
+            </li>
+          </ul>
           <div class="techline">
-            Django · Next.js · PostgreSQL · Redis · Docker · GitHub Actions
-          </div>
-        </div>
-
-        <div class="entry">
-          <div class="headrow">
-            <span class="role">Waka — Book Reading Website</span
-            ><span class="date">SotaTek · 2020—2024</span>
-          </div>
-          <div class="desc">
-            Backend services with Django and web scraping with Scrapy, handling
-            complex task queues with Celery; responsive reading experience with
-            Next.js; CI/CD with GitHub Actions.
-          </div>
-          <div class="techline">
-            Django · Next.js · Scrapy · Celery · PostgreSQL
-          </div>
-        </div>
-
-        <div class="entry">
-          <div class="headrow">
-            <span class="role"
-              >Friday Night Funkin Bot (FNFBot) — Game Automation Tool</span
-            ><span class="date">Personal</span>
-          </div>
-          <div class="desc">
-            High-accuracy automation bot using multithreading in Python, C++,
-            and C#. Migrated Python → C++ for major performance gains, cutting
-            execution time by over <strong>50%</strong> and pushing miss rates
-            to near 0% on high difficulty levels.
-          </div>
-          <div class="techline">Python · C++ · C# · Multithreading</div>
-        </div>
-
-        <div class="entry">
-          <div class="headrow">
-            <span class="role"
-              >Vietnamese Virtual Assistant &amp; Graduation Thesis (GLOW)</span
-            ><span class="date">Academic</span>
-          </div>
-          <div class="desc">
-            Vietnamese voice assistant (speech recognition, search, email,
-            weather, Q&amp;A). Graduation thesis applied the OpenAI GLOW network
-            to customize object images on Vietnamese portrait datasets.
-          </div>
-          <div class="techline">
-            Python · TensorFlow · OpenCV · Speech Recognition · Selenium
+            <b>Tech stack:</b> Django · Next.js · PostgreSQL · Redis · Docker ·
+            GitHub Actions
           </div>
         </div>
       </section>
 
-      <!-- ===== EDUCATION / LANG / AWARDS ===== -->
-      <div class="two-col">
-        <div class="col">
-          <section class="section">
-            <div class="sec-title">Education</div>
-            <div class="entry">
-              <div class="headrow">
-                <span class="role">B.Sc. Information Technology</span
-                ><span class="date">Sep 2015 — Sep 2019</span>
-              </div>
-              <div class="desc">
-                People's Security Academy, Ha Noi, Viet Nam
-              </div>
-              <div class="sub">
-                Thesis: OpenAI GLOW applied to image customization
-                (Python/TensorFlow).
-              </div>
-            </div>
-          </section>
-          <section class="section">
-            <div class="sec-title">Languages</div>
-            <div class="entry">
-              <strong>English</strong> — Fluent
-              <span style="color: #aab0b8">|</span>
-              <strong>Vietnamese</strong> — Native
-            </div>
-          </section>
+      <!-- ===== EDUCATION / AWARDS / LANGUAGES ===== -->
+      <section class="section">
+        <div class="sec-title">Education</div>
+        <div class="entry">
+          <div class="headrow">
+            <span class="role">B.Sc. Information Technology</span
+            ><span class="date">Sep 2015 — Sep 2019</span>
+          </div>
+          <div class="desc">People's Security Academy, Ha Noi, Viet Nam</div>
+          <div class="sub">
+            Thesis: OpenAI GLOW applied to image customization
+            (Python/TensorFlow).
+          </div>
         </div>
-        <div class="col">
-          <section class="section">
-            <div class="sec-title">Awards</div>
-            <div class="award">
-              2019 — Second Prize, Student Scientific Research Competition
-            </div>
-            <div class="award">
-              2017 &amp; 2018 — First Prize, National Mathematics Olympiad
-            </div>
-            <div class="award">
-              2015 — 2017 — Multiple prizes, National Math &amp; Computer
-              Science Olympiads
-            </div>
-          </section>
+      </section>
+      <section class="section">
+        <div class="sec-title">Awards</div>
+        <ul class="bullets">
+          <li>
+            2019 — Second Prize in the student scientific research competition
+            organized by the People's Security Academy.
+          </li>
+          <li>
+            2018 — First Prize in the National Mathematics Olympiad for
+            university students.
+          </li>
+          <li>
+            2017 — First Prize in the National Mathematics Olympiad for
+            university students.
+          </li>
+          <li>
+            2017 — Third Prize in the National Computer Science Olympiad for
+            university students.
+          </li>
+          <li>
+            2016 — Third Prize in the National Mathematics Olympiad for
+            university students.
+          </li>
+          <li>
+            2016 — Consolation Prize in the National Computer Science Olympiad
+            for university students.
+          </li>
+          <li>
+            2015 — Third Prize in the National Mathematics Olympiad for 12th
+            grade students.
+          </li>
+        </ul>
+      </section>
+      <section class="section">
+        <div class="sec-title">Languages</div>
+        <div class="entry">
+          <strong>English</strong> — Professional Working Proficiency
+          <span style="color: #aab0b8">|</span>
+          <strong>Vietnamese</strong> — Native
         </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>
