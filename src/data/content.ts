@@ -2,11 +2,11 @@
 
 export const site = {
   name: "Hung Thai",
-  role: "Software Engineer",
+  role: "Senior Software Engineer",
   tagline:
     "I build scalable, high-availability distributed systems for e-commerce and lending/banking.",
   description:
-    "Software engineer with 6+ years of experience building scalable, high-availability distributed systems across e-commerce and lending/banking.",
+    "Senior software engineer with 6+ years of experience building scalable, high-availability distributed systems across e-commerce and lending/banking.",
   location: "Hanoi, Vietnam",
   email: "hungdhv97@gmail.com",
   github: "https://github.com/hungdhv97",
@@ -15,7 +15,7 @@ export const site = {
 };
 
 export const about = [
-  "Software engineer with 6+ years of experience building scalable, high-availability distributed systems — across both e-commerce and lending/banking. I've shipped products at consumer scale and engineered the complex, compliance-driven systems behind enterprise loan lifecycles.",
+  "Senior software engineer with 6+ years of experience building scalable, high-availability distributed systems — across both e-commerce and lending/banking. I've shipped products at consumer scale and engineered the complex, compliance-driven systems behind enterprise loan lifecycles.",
   "In e-commerce, I built and scaled backend services that handled high traffic and high transaction volumes, optimizing performance and reliability under real-world load. In lending/banking, I design and own the authorization and workflow layers — fine-grained RBAC, multi-level approval chains, and business rule engines that map precisely to regulatory and operational constraints.",
   "I take ownership of system design, collaborate across teams to align technical decisions with business logic, and mentor engineers to raise the quality bar. In fast, agile environments, I deliver multiple features per release cycle without sacrificing quality or compliance.",
 ];
